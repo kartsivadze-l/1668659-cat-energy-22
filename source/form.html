@@ -7,7 +7,7 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo" href="#">
+      <a class="page-header__logo" href="index.html">
         <picture>
           <img
             class="page-header__logo-image"
@@ -101,6 +101,7 @@
           Заполните анкету, и мы подберем программу питания для вашего кота
         </p>
         <form class="form" action="https://echo.htmlacademy.ru" method="POST">
+          <div class="form-field-cat_wrapper">
           <fieldset class="form-field form-field-cat">
             <legend class="visually-hidden">Расскажите о вашем котике:</legend>
             <label class="form-field-cat__label"
@@ -134,6 +135,7 @@
               />
             </label>
           </fieldset>
+        </div>
           <fieldset class="form-field form-field-program">
             <legend class="visually-hidden">
               Выберите программу или положитесь на наш совет:
@@ -277,7 +279,7 @@
           </div>
           <fieldset class="form-field form-field-additional">
             <legend class="form-field-additional__title">Дополнительно</legend>
-            <label>
+            <label class="form-field-additional__label">
               <input
                 class="form-field-additional__input visually-hidden"
                 type="checkbox"
@@ -286,7 +288,7 @@
                 checked
               />Сахарозаменитель
             </label>
-            <label>
+            <label class="form-field-additional__label">
               <input
                 class="form-field-additional__input visually-hidden"
                 type="checkbox"
@@ -294,7 +296,7 @@
                 id="water"
               />Питьевая вода
             </label>
-            <label>
+            <label class="form-field-additional__label">
               <input
                 class="form-field-additional__input visually-hidden"
                 type="checkbox"
@@ -302,7 +304,7 @@
                 id="milk"
               />Молоко
             </label>
-            <label>
+            <label class="form-field-additional__label">
               <input
                 class="form-field-additional__input visually-hidden"
                 type="checkbox"
@@ -311,28 +313,26 @@
               />Витамины
             </label>
           </fieldset>
-          <div class="submit__wrapper">
-            <button class="button submit__button" type="submit">
-              Отправить заявку
-            </button>
-            <p class="submit__note">* — Обязательные поля</p>
-          </div>
+          <div class="submit__button_wrapper">
+          <button class="button submit__button" type="submit">
+            Отправить заявку
+          </button>
+        </div>
+          <p class="submit__note">* — Обязательные поля</p>
         </form>
       </section>
     </main>
     <footer class="page-footer">
       <section class="contacts">
         <h2 class="visually-hidden">Контакты</h2>
-        <div class="contacts__text_wrapper">
-          <div class="contacts__text">
-            <p class="contacts__invitation">
-              Приглашаем к сотрудничеству дилеров!
-            </p>
-            <address class="contacts__address">
-              ул. Большая Конюшенная, д. 19/8
-              <span>Санкт-Петербург</span>
-            </address>
-          </div>
+        <div class="contacts__text contacts__text_grey-theme">
+          <p class="contacts__invitation">
+            Приглашаем к сотрудничеству дилеров!
+          </p>
+          <address class="contacts__address">
+            ул. Большая Конюшенная, д. 19/8
+            <span>Санкт-Петербург</span>
+          </address>
         </div>
         <div class="contacts__map">
           <iframe
@@ -344,9 +344,9 @@
         </div>
       </section>
       <section class="page-footer-contacts-links">
-        <a class="page-footer__logo" href="#">
+        <a class="page-footer-contacts-links__logo" href="index.html">
           <svg
-            class="page-footer__logo-title"
+            class="page-footer-contacts-links__logo-title"
             width="128"
             height="24"
             viewBox="0 0 128 24"
