@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body class="page__body">
     <header class="page-header">
@@ -102,6 +103,12 @@
           <p class="functional-foods__description">
             Занялся собой? Займись котом!
           </p>
+          <picture class="functional-foods__image">
+            <img
+              src="#"
+              alt="Упаковка корма Кэт энерджи"
+            />
+          </picture>
           <a class="button functional-foods__button" href="form.html"
             >Подобрать программу</a
           >
@@ -167,13 +174,13 @@
           Cat Energy Slim. Отличный результат без изнуряющих тренировок! При
           этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
         </p>
-        <dl class="example__stats">
+        <dl class="result">
           <dt class="result__title">Снижение веса</dt>
           <dd class="result__value">5 кг</dd>
           <dt class="result__title">Затрачено времени</dt>
           <dd class="result__value">60 дней</dd>
-          <dt class="result-cost__title">Затраты на питание:</dt>
-          <dd class="result-cost__value">15 000 руб.</dd>
+          <dt class="result__title-cost">Затраты на питание:</dt>
+          <dd class="result__value-cost">15 000 руб.</dd>
         </dl>
         <div class="slider">
           <div class="slider__images">
@@ -208,8 +215,7 @@
               name="image-toggle"
             />
           </label>
-          <label
-            >Стало
+          <label class="slider__btn slider__btn--after">Стало
             <input
               type="radio"
               id="after"
@@ -221,10 +227,10 @@
       </section>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__wrapper">
+
         <section class="contacts">
           <h2 class="visually-hidden">Контакты</h2>
-          <div class="contacts__text__wrapper">
+          <div class="contacts__text_wrapper">
             <div class="contacts__text">
               <p class="contacts__invitation">
                 Приглашаем к сотрудничеству дилеров!
@@ -244,6 +250,7 @@
             ></iframe>
           </div>
         </section>
+        <section class="page-footer-contacts-links">
         <a class="page-footer__logo" href="#">
           <svg
             class="page-footer__logo-title"
@@ -353,7 +360,7 @@
             </a>
           </li>
         </ul>
-      </div>
+
       <div class="page-footer__copyright copyright">
         <h2 class="visually-hidden">Правообладатель</h2>
         <a
@@ -376,6 +383,8 @@
             /></svg
         ></a>
       </div>
+
+    </section>
     </footer>
   </body>
 </html>
