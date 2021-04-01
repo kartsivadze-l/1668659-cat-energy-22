@@ -7,7 +7,7 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo" href="#">
+      <a class="page-header__logo" href="index.html">
         <picture>
           <img
             class="page-header__logo-image"
@@ -75,23 +75,19 @@
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a class="site-list__link site-list__item--active" href="#"
-                >Главная</a
-              >
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="catalog.html"
-                >Каталог продукции</a
-              >
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="form.html">Подбор программы</a>
-            </li>
-          </ul>
-        </div>
+        <ul class="site-list">
+          <li class="site-list__item">
+            <a class="site-list__link site-list__item--active" href="#"
+              >Главная</a
+            >
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="form.html">Подбор программы</a>
+          </li>
+        </ul>
       </nav>
     </header>
     <main class="page-main">
@@ -100,196 +96,212 @@
         <h2 class="catalog__title">Каталог продукции</h2>
         <ul class="catalog-list">
           <li class="catalog-item">
-            <h3 class="catalog-item__name">Cat Energy PRO 500 г</h3>
-            <picture>
-              <img
-                class="catalog-item__image"
-                src="img/catalog-item1.png"
-                width="68"
-                height="86"
-                alt="Корм Cat Energy Pro с курицей объемом 500 граммов"
-              />
-            </picture>
-            <dl class="catalog-item__details">
-              <dt class="catalog-item-detail__title">Масса</dt>
-              <dd class="catalog-item-detail__value">500 г</dd>
-              <dt class="catalog-item-detail__title">Вкус</dt>
-              <dd class="catalog-item-detail__value">Курица</dd>
-              <dt class="catalog-item-detail__title">Цена</dt>
-              <dd class="catalog-item-detail__value">700 Р.</dd>
-            </dl>
-            <a
-              class="button order-button"
-              aria-label="Добавить корм Cat Energy Pro с курицей объемом 500 граммов а корзину и перейти на страницу оформления заказа"
-              href="#"
-              >Заказать</a
-            >
+            <div class="catalog-item_wrapper">
+              <h3 class="catalog-item__name">Cat Energy PRO 500 г</h3>
+              <picture>
+                <img
+                  class="catalog-item__image"
+                  src="img/catalog-item1.png"
+                  width="68"
+                  height="86"
+                  alt="Корм Cat Energy Pro с курицей объемом 500 граммов"
+                />
+              </picture>
+              <dl class="catalog-item__details">
+                <dt class="catalog-item-detail__title">Масса</dt>
+                <dd class="catalog-item-detail__value">500 г</dd>
+                <dt class="catalog-item-detail__title">Вкус</dt>
+                <dd class="catalog-item-detail__value">Курица</dd>
+                <dt class="catalog-item-detail__title">Цена</dt>
+                <dd class="catalog-item-detail__value">700 Р.</dd>
+              </dl>
+              <a
+                class="button order-button"
+                aria-label="Добавить корм Cat Energy Pro с курицей объемом 500 граммов а корзину и перейти на страницу оформления заказа"
+                href="#"
+                >Заказать</a
+              >
+            </div>
           </li>
           <li class="catalog-item">
-            <h3 class="catalog-item__name">Cat Energy PRO 500 г</h3>
-            <picture>
-              <img
-                class="catalog-item__image"
-                src="img/catalog-item2.png"
-                width="84"
-                height="101"
-                alt="Корм Cat Energy Pro с курицей объемом 1000 граммов"
-              />
-            </picture>
-            <dl class="catalog-item__details">
-              <dt class="catalog-item-detail__title">Масса</dt>
-              <dd class="catalog-item-detail__value">1000 г</dd>
-              <dt class="catalog-item-detail__title">Вкус</dt>
-              <dd class="catalog-item-detail__value">Курица</dd>
-              <dt class="catalog-item-detail__title">Цена</dt>
-              <dd class="catalog-item-detail__value">1000 Р.</dd>
-            </dl>
-            <a
-              class="button order-button"
-              aria-label="Добавить корм Cat Energy Pro с курицей объемом 1000 граммов а корзину и перейти на страницу оформления заказа"
-              href="#"
-              >Заказать</a
-            >
+            <div class="catalog-item_wrapper">
+              <h3 class="catalog-item__name">Cat Energy PRO 500 г</h3>
+              <picture>
+                <img
+                  class="catalog-item__image"
+                  src="img/catalog-item2.png"
+                  width="84"
+                  height="101"
+                  alt="Корм Cat Energy Pro с курицей объемом 1000 граммов"
+                />
+              </picture>
+              <dl class="catalog-item__details">
+                <dt class="catalog-item-detail__title">Масса</dt>
+                <dd class="catalog-item-detail__value">1000 г</dd>
+                <dt class="catalog-item-detail__title">Вкус</dt>
+                <dd class="catalog-item-detail__value">Курица</dd>
+                <dt class="catalog-item-detail__title">Цена</dt>
+                <dd class="catalog-item-detail__value">1000 Р.</dd>
+              </dl>
+              <a
+                class="button order-button"
+                aria-label="Добавить корм Cat Energy Pro с курицей объемом 1000 граммов а корзину и перейти на страницу оформления заказа"
+                href="#"
+                >Заказать</a
+              >
+            </div>
           </li>
           <li class="catalog-item">
-            <h3 class="catalog-item__name">Cat Energy PRO 500 г</h3>
-            <picture>
-              <img
-                class="catalog-item__image"
-                src="img/catalog-item3.png"
-                width="68"
-                height="78"
-                alt="Корм Cat Energy Pro с рыбой объемом 500 граммов"
-              />
-            </picture>
-            <dl class="catalog-item__details">
-              <dt class="catalog-item-detail__title">Масса</dt>
-              <dd class="catalog-item-detail__value">500 г</dd>
-              <dt class="catalog-item-detail__title">Вкус</dt>
-              <dd class="catalog-item-detail__value">Рыба</dd>
-              <dt class="catalog-item-detail__title">Цена</dt>
-              <dd class="catalog-item-detail__value">700 Р.</dd>
-            </dl>
-            <a
-              class="button order-button"
-              aria-label="Добавить корм Cat Energy Pro с рыбой объемом 500 граммов а корзину и перейти на страницу оформления заказа"
-              href="#"
-              >Заказать</a
-            >
+            <div class="catalog-item_wrapper">
+              <h3 class="catalog-item__name">Cat Energy PRO 500 г</h3>
+              <picture>
+                <img
+                  class="catalog-item__image"
+                  src="img/catalog-item3.png"
+                  width="68"
+                  height="78"
+                  alt="Корм Cat Energy Pro с рыбой объемом 500 граммов"
+                />
+              </picture>
+              <dl class="catalog-item__details">
+                <dt class="catalog-item-detail__title">Масса</dt>
+                <dd class="catalog-item-detail__value">500 г</dd>
+                <dt class="catalog-item-detail__title">Вкус</dt>
+                <dd class="catalog-item-detail__value">Рыба</dd>
+                <dt class="catalog-item-detail__title">Цена</dt>
+                <dd class="catalog-item-detail__value">700 Р.</dd>
+              </dl>
+              <a
+                class="button order-button"
+                aria-label="Добавить корм Cat Energy Pro с рыбой объемом 500 граммов а корзину и перейти на страницу оформления заказа"
+                href="#"
+                >Заказать</a
+              >
+            </div>
           </li>
           <li class="catalog-item">
-            <h3 class="catalog-item__name">Cat Energy PRO 500 г</h3>
-            <picture>
-              <img
-                class="catalog-item__image"
-                src="img/catalog-item4.png"
-                width="84"
-                height="101"
-                alt="Корм Cat Energy Pro с рыбой объемом 1000 граммов"
-              />
-            </picture>
-            <dl class="catalog-item__details">
-              <dt class="catalog-item-detail__title">Масса</dt>
-              <dd class="catalog-item-detail__value">500 г</dd>
-              <dt class="catalog-item-detail__title">Вкус</dt>
-              <dd class="catalog-item-detail__value">Рыба</dd>
-              <dt class="catalog-item-detail__title">Цена</dt>
-              <dd class="catalog-item-detail__value">1000 Р.</dd>
-            </dl>
-            <a
-              class="button order-button"
-              aria-label="Добавить корм Cat Energy Pro с рыбой объемом 1000 граммов а корзину и перейти на страницу оформления заказа"
-              href="#"
-              >Заказать</a
-            >
+            <div class="catalog-item_wrapper">
+              <h3 class="catalog-item__name">Cat Energy PRO 500 г</h3>
+              <picture>
+                <img
+                  class="catalog-item__image"
+                  src="img/catalog-item4.png"
+                  width="84"
+                  height="101"
+                  alt="Корм Cat Energy Pro с рыбой объемом 1000 граммов"
+                />
+              </picture>
+              <dl class="catalog-item__details">
+                <dt class="catalog-item-detail__title">Масса</dt>
+                <dd class="catalog-item-detail__value">500 г</dd>
+                <dt class="catalog-item-detail__title">Вкус</dt>
+                <dd class="catalog-item-detail__value">Рыба</dd>
+                <dt class="catalog-item-detail__title">Цена</dt>
+                <dd class="catalog-item-detail__value">1000 Р.</dd>
+              </dl>
+              <a
+                class="button order-button"
+                aria-label="Добавить корм Cat Energy Pro с рыбой объемом 1000 граммов а корзину и перейти на страницу оформления заказа"
+                href="#"
+                >Заказать</a
+              >
+            </div>
           </li>
           <li class="catalog-item">
-            <h3 class="catalog-item__name">Cat Energy Slim 500 г</h3>
-            <picture>
-              <img
-                class="catalog-item__image"
-                src="img/catalog-item5.png"
-                width="68"
-                height="78"
-                alt="Корм Cat Energy Slim с гречкой объемом 500 граммов"
-              />
-            </picture>
-            <dl class="catalog-item__details">
-              <dt class="catalog-item-detail__title">Масса</dt>
-              <dd class="catalog-item-detail__value">500 г</dd>
-              <dt class="catalog-item-detail__title">Вкус</dt>
-              <dd class="catalog-item-detail__value">Гречка</dd>
-              <dt class="catalog-item-detail__title">Цена</dt>
-              <dd class="catalog-item-detail__value">400 Р.</dd>
-            </dl>
-            <a
-              class="button order-button"
-              aria-label="Добавить корм Cat Energy Slim с гречкой объемом 500 граммов а корзину и перейти на страницу оформления заказа"
-              href="#"
-              >Заказать</a
-            >
+            <div class="catalog-item_wrapper">
+              <h3 class="catalog-item__name">Cat Energy Slim 500 г</h3>
+              <picture>
+                <img
+                  class="catalog-item__image"
+                  src="img/catalog-item5.png"
+                  width="68"
+                  height="78"
+                  alt="Корм Cat Energy Slim с гречкой объемом 500 граммов"
+                />
+              </picture>
+              <dl class="catalog-item__details">
+                <dt class="catalog-item-detail__title">Масса</dt>
+                <dd class="catalog-item-detail__value">500 г</dd>
+                <dt class="catalog-item-detail__title">Вкус</dt>
+                <dd class="catalog-item-detail__value">Гречка</dd>
+                <dt class="catalog-item-detail__title">Цена</dt>
+                <dd class="catalog-item-detail__value">400 Р.</dd>
+              </dl>
+              <a
+                class="button order-button"
+                aria-label="Добавить корм Cat Energy Slim с гречкой объемом 500 граммов а корзину и перейти на страницу оформления заказа"
+                href="#"
+                >Заказать</a
+              >
+            </div>
           </li>
           <li class="catalog-item">
-            <h3 class="catalog-item__name">Cat Energy Slim 1000 г</h3>
-            <picture>
-              <img
-                class="catalog-item__image"
-                src="img/catalog-item6.png"
-                width="84"
-                height="100"
-                alt="Корм Cat Energy Slim с гречкой объемом 1000 граммов"
-              />
-            </picture>
-            <dl class="catalog-item__details">
-              <dt class="catalog-item-detail__title">Масса</dt>
-              <dd class="catalog-item-detail__value">1000 г</dd>
-              <dt class="catalog-item-detail__title">Вкус</dt>
-              <dd class="catalog-item-detail__value">Гречка</dd>
-              <dt class="catalog-item-detail__title">Цена</dt>
-              <dd class="catalog-item-detail__value">700 Р.</dd>
-            </dl>
-            <a
-              class="button order-button"
-              aria-label="Добавить корм Cat Energy Slim с гречкой объемом 1000 граммов а корзину и перейти на страницу оформления заказа"
-              href="#"
-              >Заказать</a
-            >
+            <div class="catalog-item_wrapper">
+              <h3 class="catalog-item__name">Cat Energy Slim 1000 г</h3>
+              <picture>
+                <img
+                  class="catalog-item__image"
+                  src="img/catalog-item6.png"
+                  width="84"
+                  height="100"
+                  alt="Корм Cat Energy Slim с гречкой объемом 1000 граммов"
+                />
+              </picture>
+              <dl class="catalog-item__details">
+                <dt class="catalog-item-detail__title">Масса</dt>
+                <dd class="catalog-item-detail__value">1000 г</dd>
+                <dt class="catalog-item-detail__title">Вкус</dt>
+                <dd class="catalog-item-detail__value">Гречка</dd>
+                <dt class="catalog-item-detail__title">Цена</dt>
+                <dd class="catalog-item-detail__value">700 Р.</dd>
+              </dl>
+              <a
+                class="button order-button"
+                aria-label="Добавить корм Cat Energy Slim с гречкой объемом 1000 граммов а корзину и перейти на страницу оформления заказа"
+                href="#"
+                >Заказать</a
+              >
+            </div>
           </li>
           <li class="catalog-item">
-            <h3 class="catalog-item__name">Cat Energy Slim 500 г</h3>
-            <picture>
-              <img
-                class="catalog-item__image"
-                src="img/catalog-item7.png"
-                width="72"
-                height="84"
-                alt="Корм Cat Energy Slim с рисом объемом 500 граммов"
-              />
-            </picture>
-            <dl class="catalog-item__details">
-              <dt class="catalog-item-detail__title">Масса</dt>
-              <dd class="catalog-item-detail__value">500 г</dd>
-              <dt class="catalog-item-detail__title">Вкус</dt>
-              <dd class="catalog-item-detail__value">Рис</dd>
-              <dt class="catalog-item-detail__title">Цена</dt>
-              <dd class="catalog-item-detail__value">500 Р.</dd>
-            </dl>
-            <a
-              class="button order-button"
-              aria-label="Добавить корм Cat Energy Slim с рисом объемом 500 граммов а корзину и перейти на страницу оформления заказа"
-              href="#"
-              >Заказать</a
-            >
+            <div class="catalog-item_wrapper">
+              <h3 class="catalog-item__name">Cat Energy Slim 500 г</h3>
+              <picture>
+                <img
+                  class="catalog-item__image"
+                  src="img/catalog-item7.png"
+                  width="72"
+                  height="84"
+                  alt="Корм Cat Energy Slim с рисом объемом 500 граммов"
+                />
+              </picture>
+              <dl class="catalog-item__details">
+                <dt class="catalog-item-detail__title">Масса</dt>
+                <dd class="catalog-item-detail__value">500 г</dd>
+                <dt class="catalog-item-detail__title">Вкус</dt>
+                <dd class="catalog-item-detail__value">Рис</dd>
+                <dt class="catalog-item-detail__title">Цена</dt>
+                <dd class="catalog-item-detail__value">500 Р.</dd>
+              </dl>
+              <a
+                class="button order-button"
+                aria-label="Добавить корм Cat Energy Slim с рисом объемом 500 граммов а корзину и перейти на страницу оформления заказа"
+                href="#"
+                >Заказать</a
+              >
+            </div>
           </li>
         </ul>
         <div class="show-all-goods_wrapper">
-          <p class="show-all-goods">
-            Показать еще 100500 товаров
-            <span class="show-all-goods__note"
-              >На самом деле вкусов гораздо больше!</span
-            >
-          </p>
-          <button class="button show-all-goods__button">Показать все</button>
+          <div class="show-all-goods">
+            <p class="show-all-goods__text">
+              Показать еще 100500 товаров
+              <span class="show-all-goods__note"
+                >На самом деле вкусов гораздо больше!</span
+              >
+            </p>
+            <button class="button show-all-goods__button">Показать все</button>
+          </div>
         </div>
       </section>
       <section class="catalog-additional-goods">
@@ -377,16 +389,14 @@
     <footer class="page-footer">
       <section class="contacts">
         <h2 class="visually-hidden">Контакты</h2>
-        <div class="contacts__text_wrapper">
-          <div class="contacts__text">
-            <p class="contacts__invitation">
-              Приглашаем к сотрудничеству дилеров!
-            </p>
-            <address class="contacts__address">
-              ул. Большая Конюшенная, д. 19/8
-              <span>Санкт-Петербург</span>
-            </address>
-          </div>
+        <div class="contacts__text contacts__text_grey-theme">
+          <p class="contacts__invitation">
+            Приглашаем к сотрудничеству дилеров!
+          </p>
+          <address class="contacts__address">
+            ул. Большая Конюшенная, д. 19/8
+            <span>Санкт-Петербург</span>
+          </address>
         </div>
         <div class="contacts__map">
           <iframe
@@ -398,9 +408,9 @@
         </div>
       </section>
       <section class="page-footer-contacts-links">
-        <a class="page-footer__logo" href="#">
+        <a class="page-footer-contacts-links__logo" href="index.html">
           <svg
-            class="page-footer__logo-title"
+            class="page-footer-contacts-links__logo-title"
             width="128"
             height="24"
             viewBox="0 0 128 24"
