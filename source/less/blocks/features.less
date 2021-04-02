@@ -2,6 +2,13 @@
   margin: 7px 21px 42px 20px;
 }
 
+.features_wrapper {
+  @media (min-width: @desktop-width) {
+    max-width: 1220px;
+    margin: 0 auto;
+  }
+}
+
 .features__title {
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: normal;
@@ -13,7 +20,6 @@
   list-style: none;
   display: grid;
   row-gap: 20px;
-
 }
 
 @media (min-width: @tablet-width) {
