@@ -11,13 +11,33 @@
 
 .features-list {
   list-style: none;
-  padding-left: 80px;
+  display: grid;
+  row-gap: 20px;
+
+}
+
+@media (min-width: @tablet-width) {
+  .features-list {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 158px;
+    row-gap: 37px;
+    margin-right: 109px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .features-list {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 158px;
+    row-gap: 77px;
+  }
 }
 
 .features-list__item {
-  margin-bottom: 20px;
   font-family: "Arial", sans-serif;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
+  padding-left: 80px;
 }
