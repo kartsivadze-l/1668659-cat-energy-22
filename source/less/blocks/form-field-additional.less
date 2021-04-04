@@ -13,6 +13,20 @@
   margin-left: 20px;
 }
 
+.form-field-additional_wrapper {
+  display: grid;
+  @media (min-width: @tablet-width) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 61px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 104px;
+  }
+}
+
 .form-field-additional__label {
   text-transform: uppercase;
   font-family: "Oswald", "Arial", sans-serif;

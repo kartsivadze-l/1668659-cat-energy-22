@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body class="page__body">
-    <header class="page-header page-header_wrapper">
-      <a class="page-header__logo" href="#">
+    <header class="page-header center_wrapper">
+      <a class="page-header__logo" href="index.html">
         <picture>
           <img
             class="page-header__logo-image"
@@ -77,12 +77,12 @@
         </button>
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a class="site-list__link site-list__item--active" href="#"
+              <a class="site-list__link site-list__item--active" href="index.html"
                 >Главная</a
               >
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="catalog.html"
+              <a class="site-list__link site-list__item--active" href="#"
                 >Каталог продукции</a
               >
             </li>
@@ -94,7 +94,7 @@
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Каталог товаров Cat Energy</h1>
-      <section class="catalog">
+      <section class="catalog center_wrapper">
         <h2 class="catalog__title">Каталог продукции</h2>
         <ul class="catalog-list">
           <li class="catalog-item">
@@ -127,7 +127,7 @@
           </li>
           <li class="catalog-item">
             <div class="catalog-item_wrapper">
-              <h3 class="catalog-item__name">Cat Energy PRO 500 г</h3>
+              <h3 class="catalog-item__name">Cat Energy PRO 1000 г</h3>
               <picture>
                 <img
                   class="catalog-item__image"
@@ -293,9 +293,7 @@
               >
             </div>
           </li>
-        </ul>
-        <div class="show-all-goods_wrapper">
-          <div class="show-all-goods">
+          <li class="show-all-goods">
             <p class="show-all-goods__text">
               Показать еще 100500 товаров
               <span class="show-all-goods__note"
@@ -306,14 +304,15 @@
               <button class="button show-all-goods__button">
                 Показать все
               </button>
-            </div>
-          </div>
+          </li>
+        </ul>
         </div>
       </section>
+      <div class="all-additional-options">
       <section class="catalog-additional-goods">
         <h2 class="catalog-additional-goods__title">Дополнительные товары</h2>
         <ul class="catalog-additional-goods-list">
-          <li class="catalog-additional-goods-item">
+          <li class="catalog-additional-goods-item catalog-additional-goods-item-sweetener">
             <h3 class="catalog-additional-goods-item__title">
               Сахарозаменитель
             </h3>
@@ -391,6 +390,7 @@
           </p>
         </div>
       </section>
+    </div>
     </main>
     <footer class="page-footer">
       <section class="contacts contacts_wrapper">
@@ -413,7 +413,7 @@
           ></iframe>
         </div>
       </section>
-      <section class="page-footer-contacts-links page-footer-contacts-links_wrapper">
+      <section class="page-footer-contacts-links center_wrapper">
         <a class="page-footer-contacts-links__logo" href="index.html">
           <svg
             class="page-footer-contacts-links__logo-title"

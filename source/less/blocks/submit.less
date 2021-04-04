@@ -1,3 +1,16 @@
+.submit {
+  display: grid;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 61px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-gap: 81px;
+  }
+}
+
 .submit__note {
   font-family: "Arial", sans-serif;
   font-style: normal;
@@ -14,5 +27,13 @@
 .submit__button {
   width: 100%;
   border: none;
+
+  @media (min-width: @tablet-width) {
+    width: 282px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 568px;
+  }
 }
 
