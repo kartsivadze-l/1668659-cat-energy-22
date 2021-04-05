@@ -1,4 +1,5 @@
 .form-field-owner-contacts {
+  padding-left: 20px;
   padding-bottom: 10px;
 }
 
@@ -9,9 +10,26 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
-  padding-left: 20px;
   padding-top: 26px;
   padding-bottom: 35px;
+}
+
+.form-field-owner-contacts_wrapper {
+  display: grid;
+  @media (max-width: @mobile-width-only) {
+    grid-template-rows: 1fr 1fr;
+    row-gap: 14px;
+  }
+
+  @media (min-width: @tablet-width) {
+    grid-template-rows: 1fr 1fr;
+    row-gap: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 78px;
+  }
 }
 
 .form-field-owner-contacts__label {
@@ -27,6 +45,37 @@
 
 .form-field-owner-contacts__input {
   border: 1px solid #cdcdcd;
+}
+
+.form-field-owner-contacts__input-email {
+  width: 219px;
+  height: 45px;
+
+  @media (min-width: @tablet-width) {
+    width: 551px;
+    height: 52px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 484px;
+    height: 50px;
+  }
+}
+
+.form-field-owner-contacts__input-phone {
+  width: 204px;
+  height: 45px;
+
+  @media (min-width: @tablet-width) {
+    width: 535px;
+    height: 52px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 472px;
+    height: 50px;
+  }
+
 }
 
 .form-field-owner-contacts__input::placeholder {

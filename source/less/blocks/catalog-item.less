@@ -1,6 +1,21 @@
 .catalog-item {
   padding-bottom: 25px;
+  box-sizing: border-box;
+
+  @media (max-width: @mobile-width-only) {
   border-bottom: 1px solid #ebebeb;
+}
+
+ @media (min-width: @tablet-width) {
+   width: 324px;
+   height: 430px;
+   background-color: #f2f2f2;
+ }
+
+ @media (min-width: @desktop-width) {
+   width: 245px;
+   height: 431px;
+ }
 }
 
 .catalog-item_wrapper {
