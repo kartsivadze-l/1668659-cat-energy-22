@@ -13,6 +13,14 @@
   background-color: #f2f2f2;
   padding: 27px 20px 25px 20px;
   margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 55px;
+}
+
+@media (min-width: @desktop-width) {
+  padding-bottom: 57px;
+}
 }
 
 .programs-list__title {
@@ -22,6 +30,69 @@
   font-weight: normal;
   font-size: 24px;
   line-height: 37px;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    text-align: left;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: center;
+  }
+}
+
+.programs-list__title--slim::before {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 53px;
+  background-image: url("../img/cat-sitting-mobile.svg");
+  background-repeat: no-repeat;
+  top: -10px;
+  left: 50px;
+
+  @media (min-width: @tablet-width) {
+    width: 200px;
+    height: 211px;
+    background-image: url("../img/cat-sitting-tablet.svg");
+    top: -25px;
+    left: 400px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100px;
+    height: 106px;
+    background-image: url("../img/cat-sitting-desktop.svg");
+    top: -25px;
+    left: 32px;
+  }
+}
+
+.programs-list__title--pro::before {
+  position: absolute;
+  content: "";
+  width: 67px;
+  height: 50px;
+  background-image: url("../img/cat-walking-mobile.svg");
+  background-repeat: no-repeat;
+  top: -10px;
+  left: 50px;
+
+  @media (min-width: @tablet-width) {
+    width: 268px;
+    height: 200px;
+    background-image: url("../img/cat-walking-tablet.svg");
+    top: -25px;
+    left: 360px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 134px;
+    height: 100px;
+    background-image: url("../img/cat-walking-desktop.svg");
+    top: -25px;
+    left: 0;
+  }
 }
 
 .programs-list__description {
@@ -29,7 +100,23 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 48px;
+  }
 }
+
+@media (max-width: @mobile-width-only) {
+.programs-list__description br {
+  display: none;
+}
+}
+
+@media (min-width: @desktop-width) {
+  .programs-list__description br {
+    display: none;
+  }
+  }
 
 .programs-list__link {
   text-decoration: none;
@@ -39,4 +126,35 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 16px;
+  position: relative;
+}
+
+.programs-list__link:active {
+  opacity: 0.3;
+}
+
+.programs-list__link:after {
+  position: absolute;
+  content: "";
+  width: 24px;
+  height: 12px;
+  background-image: url("../img/arrow.svg");
+  background-repeat: no-repeat;
+  top: 5px;
+  left: 100px;
+}
+
+.programs-list__link:active:after {
+  opacity: 0.3;
+}
+
+.programs-list__link:hover:after {
+  position: absolute;
+  content: "";
+  width: 32px;
+  height: 10px;
+  background-image: url("../img/arrow-hover.svg");
+  background-repeat: no-repeat;
+  top: 5px;
+  left: 100px;
 }

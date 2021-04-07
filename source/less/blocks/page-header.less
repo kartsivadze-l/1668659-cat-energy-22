@@ -1,7 +1,61 @@
 .page-header {
   display: flex;
   justify-content: space-between;
-  padding-top: 11px;
   box-sizing: border-box;
-  border-bottom: 1px solid #e6e6e6;
+  flex-direction: column;
+  padding: none;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    padding-left: 30px;
+    padding-right: 29px;
+    justify-content: space-between;
+    padding-top: 26px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 53px;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+}
+
+.page-header__logo {
+  @media (max-width: @mobile-width-only) {
+    margin-right: 170px;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-right: 12px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 14px;
+  }
+}
+
+.page-header__logo:hover {
+  opacity: 0.8;
+}
+
+.page-header__logo:active {
+  opacity: 0.6;
+}
+
+.page-header__logo-title {
+  @media (min-width: @tablet-width) {
+    padding-top: 18px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 22px;
+  }
+}
+
+.page-header__logo-title:hover {
+  opacity: 0.8;
+}
+
+.page-header__logo-title:active {
+  opacity: 0.6;
 }

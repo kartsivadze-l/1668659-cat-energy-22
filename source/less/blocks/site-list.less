@@ -3,6 +3,7 @@
   padding-left: 0;
   display: flex;
   flex-direction: column;
+  margin: 0;
 }
 
 @media (min-width: @tablet-width) {
@@ -22,6 +23,22 @@
   }
 }
 
+.site-list__item {
+  @media (max-width: @mobile-width-only) {
+  border-bottom: 1px solid #e6e6e6;
+  padding-top: 22px;
+  padding-bottom: 24px;
+}
+
+  @media (min-width: @tablet-width) {
+    padding-top: 18px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 16px;
+  }
+}
+
 .site-list__link {
   text-decoration: none;
   text-transform: uppercase;
@@ -32,4 +49,32 @@
   font-size: 20px;
   line-height: 20px;
   box-sizing: border-box;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: @desktop-width) {
+    color: white;
+    background-color: greenyellow; //Это временно
+  }
+}
+
+@media (max-width: @mobile-width-only) {
+.main-nav_closed .site-list__item {
+  display: none;
+}
+
+.main-nav_nojs .site-list__item {
+  display: block;
+  text-align: center;
+}
+}
+
+.site-list__link_active {
+  border-bottom: 2px solid#68b738;
 }
