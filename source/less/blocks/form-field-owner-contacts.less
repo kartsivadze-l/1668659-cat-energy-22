@@ -1,17 +1,31 @@
 .form-field-owner-contacts {
   padding-left: 20px;
   padding-bottom: 10px;
+  padding-top: 69px;
+  border-top: 2px solid #68b738;
+  position: relative;
 }
 
 .form-field-owner-contacts__title {
-  text-transform: uppercase;
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
-  line-height: 18px;
-  padding-top: 26px;
-  padding-bottom: 35px;
+  font-size: 24px;
+  line-height: 26px;
+  padding-left: 14px;
+  padding-right: 20px;
+  background-color: white;
+  z-index: 2;
+  position: absolute;
+  top: -25px;
+  left: 0;
+
+}
+
+.form-field-owner-contacts__title br {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .form-field-owner-contacts_wrapper {
@@ -41,6 +55,7 @@
   line-height: 18px;
   display: block;
   padding-bottom: 14px;
+  position: relative;
 }
 
 .form-field-owner-contacts__input {
@@ -62,6 +77,25 @@
   }
 }
 
+.form-field-owner-contacts__icon-email {
+  position: absolute;
+
+  @media (max-width: @mobile-width-only) {
+  top: 15px;
+  left: 245px;
+}
+
+ @media (min-width: @tablet-width) {
+   top: 15px;
+   left: 570px;
+ }
+
+ @media (min-width: @desktop-width) {
+  top: 37px;
+  left: 450px;
+}
+}
+
 .form-field-owner-contacts__input-phone {
   width: 204px;
   height: 45px;
@@ -75,7 +109,25 @@
     width: 472px;
     height: 50px;
   }
+}
 
+.form-field-owner-contacts__icon-phone {
+  position: absolute;
+
+  @media (max-width: @mobile-width-only) {
+    top: 12px;
+    left: 245px;
+  }
+
+  @media (min-width: @tablet-width) {
+    top: 15px;
+    left: 570px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 33px;
+    left: 450px;
+  }
 }
 
 .form-field-owner-contacts__input::placeholder {

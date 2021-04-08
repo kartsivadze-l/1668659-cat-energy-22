@@ -1,0 +1,90 @@
+.main-nav {
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+  margin: 0;
+
+  &::after {
+    @media (min-width: @desktop-width) {
+    position: absolute;
+    content: "";
+    background: url("../img/bg-cat-desktop.png") no-repeat;
+    background-repeat: no-repeat;
+    top: 0;
+    right: 0;
+    width: 720px;
+    height: 694px;
+    z-index: -1;
+  }
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 69px;
+  }
+}
+
+@media (max-width: @mobile-width-only) {
+  width: 100%;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+.main-nav__toggle:hover,
+.main-nav__toggle:focus-within {
+  outline: none;
+}
+
+@media (max-width: @mobile-width-only) {
+  .main-nav__toggle {
+    position: absolute;
+    top: -40px;
+    right: 20px;
+    display: block;
+    width: 24px;
+    height: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: white;
+  }
+
+  .main-nav_closed .main-nav__toggle::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background-color: black;
+    box-shadow: 0 8px 0 0 black, 0 16px 0 black;
+  }
+
+  .main-nav_opened .main-nav__toggle::before {
+    top: 0;
+    left: 0;
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    background-color: black;
+    transform: rotate(45deg);
+  }
+
+  .main-nav_opened .main-nav__toggle::after {
+    top: 0;
+    left: 0;
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    background-color: black;
+    transform: rotate(-45deg);
+  }
+
+  .main-nav_nojs .main-nav__toggle {
+    display: none;
+  }
+}
