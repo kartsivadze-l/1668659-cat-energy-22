@@ -1,6 +1,9 @@
 .form-field-additional {
   margin-top: 23px;
   margin-bottom: 15px;
+  border-top: 2px solid #68b738;
+  position: relative;
+  padding-top: 43px;
 }
 
 .form-field-additional__title {
@@ -11,14 +14,34 @@
   line-height: 26px;
   margin-bottom: 39px;
   margin-left: 20px;
+  padding-left: 20px;
+  padding-right: 23px;
+  background-color: white;
+  position: absolute;
+  top: -15px;;
+  left: -19px;
+  z-index: 2px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 40px;
+    padding-right: 41px;
+  }
+}
+
+.form-field-additional__title br {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .form-field-additional_wrapper {
   display: grid;
+
   @media (min-width: @tablet-width) {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     column-gap: 61px;
+    row-gap: 32px;
   }
 
   @media (min-width: @desktop-width) {
@@ -35,6 +58,45 @@
   font-size: 16px;
   line-height: 18px;
   display: block;
-  padding-left: 46px;
+  padding-left: 70px;
   margin-bottom: 19px;
+  position: relative;
+}
+
+.form-field-additional__label::before {
+  position: absolute;
+  content: "";
+  border: 1px solid #cdcdcd;
+
+  @media (max-width: @mobile-width-only) {
+    width: 30px;
+    height: 30px;
+    top: 0;
+    left: 20px;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 40px;
+    height: 40px;
+    top: -5px;
+    left: 20px;
+  }
+}
+
+.form-field-additional__input:checked + .form-field-additional__label::after {
+  position: absolute;
+  content: "";
+  background-image: url("../img/check-mobile.svg");
+  width: 18px;
+  height: 14px;
+
+  @media (max-width: @mobile-width-only) {
+    top: 7px;
+    left: 27px;
+  }
+
+  @media (min-width: @tablet-width) {
+    top: 9px;
+    left: 32px;
+  }
 }

@@ -1,24 +1,6 @@
 .functional-foods {
-  padding-top: 27px;
-  padding-bottom: 20px;
+  box-sizing: border-box;
   position: relative;
-
-  @media (max-width: @mobile-width-only) {
-    height: 302px;
-    background-color: rgba(104, 183, 56, 0.85);
-    background-repeat: no-repeat;
-    background-position: 50% 0;
-
-    &::before {
-    position: absolute;
-    content: "";
-    background-image: url("../img/bg-cat-tablet.png");
-    background-repeat: no-repeat;
-    top: 0;
-    left: 50%;
-    width: 320px;
-    height: 302px;
-    }
 }
 
 .functional-foods__title {
@@ -27,6 +9,7 @@
   font-weight: normal;
   font-size: 36px;
   line-height: 36px;
+  padding-top: 27px;
 
   @media (max-width: @mobile-width-only) {
     color: white;
@@ -46,12 +29,44 @@
   }
 }
 
-.functional-foods__button_wrapper {
-  padding-left: 20px;
-  padding-right: 20px;
+.functional-foods_wrapper {
+  @media (max-width: @mobile-width-only) {
+    height: 302px;
+    background-size: 302px;
+    background-color: rgba(104, 183, 56);
+    background-repeat: no-repeat;
+    position: relative;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 500px;
+    height: 550px;
+  }
+
+  &::before {
+    @media (max-width: @mobile-width-only) {
+    position: absolute;
+    content: "";
+    background-image: url("../img/bg-cat-tablet.png");
+    background-repeat: no-repeat;
+    opacity: 0.15;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 320px;
+    height: 302px;
+    margin: 0 auto;
+    }
+  }
 }
 
+/*.functional-foods__button_wrapper {
+  outline: 2px solid blue;
+}*/
+
 .functional-foods__button {
+
   @media (min-width: @tablet-width) {
     display: inline;
     padding-left: 26px;

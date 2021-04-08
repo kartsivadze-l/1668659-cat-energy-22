@@ -7,6 +7,7 @@
   </head>
   <body class="page__body">
     <header class="page-header container">
+      <div class="logo-title">
       <a class="page-header__logo" href="index.html">
         <picture>
           <img
@@ -71,13 +72,14 @@
           </defs>
         </svg>
       </a>
-      <nav class="main-nav">
+      </div>
+      <nav class="main-nav main-nav_closed main-nav_nojs">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a class="site-list__link site-list__item--active" href="index.html"
+            <a class="site-list__link" href="index.html"
               >Главная</a
             >
           </li>
@@ -85,7 +87,7 @@
             <a class="site-list__link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link site-list__item--active" href="#"
+            <a class="site-list__link site-list__link_active" href="#"
               >Подбор программы</a
             >
           </li>
@@ -96,7 +98,7 @@
       <section class="program-selection container">
         <h1 class="program-selection__title">Подбор программы</h1>
         <p class="program-selection__text">
-          Заполните анкету, и мы подберем программу питания для вашего кота
+          Заполните анкету, <br> и мы подберем программу питания для вашего кота
         </p>
         <form class="form" action="https://echo.htmlacademy.ru" method="POST">
           <div class="questionnaire_wrapper">
@@ -105,8 +107,10 @@
                 <legend class="visually-hidden">
                   Расскажите о вашем котике:
                 </legend>
-                <label class="form-field-cat__label"
+                <div class="form-field-cat_questionnaire-wrapper">
+                <label class="form-field-cat__label" for="cat-name"
                   >Имя:*
+                </label>
                   <input
                     class="form-field-cat__input form-field-cat__input-name"
                     type="text"
@@ -114,9 +118,12 @@
                     id="cat-name"
                     placeholder="Барсик"
                   />
-                </label>
-                <label class="form-field-cat__label"
-                  >Вес (кг):*
+              </div>
+              <div class="form-field-cat_questionnaire-wrapper">
+                  <label class="form-field-cat__label for="cat-weight">
+                    Вес (кг):*
+                  </label>
+
                   <input
                     class="form-field-cat__input form-field-cat__input-weight"
                     type="number"
@@ -124,9 +131,14 @@
                     id="cat-weight"
                     placeholder="7"
                   />
-                </label>
-                <label class="form-field-cat__label"
+                </div>
+                <div class="form-field-cat_questionnaire-wrapper">
+
+                  <label class="form-field-cat__label" for="cat-age"
                   >Возраст (лет):
+                </label>
+
+
                   <input
                     class="form-field-cat__input form-field-cat__input-age"
                     type="number"
@@ -134,42 +146,45 @@
                     id="cat-age"
                     placeholder="7"
                   />
-                </label>
+                </div>
+
               </fieldset>
             </div>
             <fieldset class="form-field form-field-program">
               <legend class="visually-hidden">
                 Выберите программу или положитесь на наш совет:
               </legend>
-              <label class="form-field-program__label">
                 <input
                   class="form-field-program__input visually-hidden"
                   type="radio"
                   name="program"
                   id="slim"
                   checked
-                />Похудение
-              </label>
-              <label class="form-field-program__label">
+                />
+                <label class="form-field-program__label" for="slim">Похудение</label>
+            </label>
                 <input
                   class="form-field-program__input visually-hidden"
                   type="radio"
                   name="program"
                   id="pro"
-                />Набор массы
+                />
+                <label class="form-field-program__label" for="pro">Набор массы</label>
               </label>
-              <label class="form-field-program__label">
+
                 <input
                   class="form-field-program__input visually-hidden"
                   type="radio"
                   name="program"
                   id="unsure"
-                />Не знаю (Нужен ваш совет)
-              </label>
+                />
+                <label class="form-field-program__label" for="unsure">
+                  Не знаю (Нужен ваш совет)
+                </label>
             </fieldset>
             <fieldset class="form-field form-field-owner-contacts">
               <legend class="form-field-owner-contacts__title">
-                Контактные данные (владельца кота)
+                Контактные данные <br> (владельца кота)
               </legend>
               <div class="form-field-owner-contacts_wrapper">
                 <label class="form-field-owner-contacts__label"
@@ -182,7 +197,7 @@
                     placeholder="kuklachev@gmail.com"
                   />
                   <svg
-                    class="form-field-owner-contacts__icon"
+                    class="form-field-owner-contacts__icon-email"
                     width="20"
                     height="15"
                     viewBox="0 0 20 15"
@@ -238,7 +253,7 @@
                     placeholder="8 (960) 900-60-90"
                   />
                   <svg
-                    class="form-field-owner-contacts__icon"
+                    class="form-field-owner-contacts__icon-phone"
                     width="20"
                     height="21"
                     viewBox="0 0 20 21"
@@ -271,52 +286,55 @@
             </fieldset>
           </div>
           <div class="form-field form-field-comment">
+            <textarea
+            class="form-field-comment__input"
+            name="user-comment"
+            id="user-comment"
+            placeholder="Расскажите обо всех повадках кота"
+          ></textarea>
             <label class="form-field-comment__label"
-              >Комментарий
-              <textarea
-                class="form-field-comment__input"
-                name="user-comment"
-                id="user-comment"
-                placeholder="Расскажите обо всех повадках кота"
-              ></textarea>
+              for="user-comment">Комментарий
+
             </label>
           </div>
           <fieldset class="form-field form-field-additional">
             <legend class="form-field-additional__title">Дополнительно</legend>
             <div class="form-field-additional_wrapper">
-              <label class="form-field-additional__label">
-                <input
-                  class="form-field-additional__input visually-hidden"
-                  type="checkbox"
-                  name="sweetener"
-                  id="sweetener"
-                  checked
-                />Сахарозаменитель
+              <input
+              class="form-field-additional__input visually-hidden"
+              type="checkbox"
+              name="sweetener"
+              id="sweetener"
+              checked
+            />
+              <label class="form-field-additional__label" for="sweetener">
+               Сахарозаменитель
               </label>
-              <label class="form-field-additional__label">
-                <input
-                  class="form-field-additional__input visually-hidden"
-                  type="checkbox"
-                  name="water"
-                  id="water"
-                />Питьевая вода
+              <input
+              class="form-field-additional__input visually-hidden"
+              type="checkbox"
+              name="water"
+              id="water"
+            />
+              <label class="form-field-additional__label" for="water">
+              Питьевая вода
               </label>
-              <label class="form-field-additional__label">
-                <input
+              <input
                   class="form-field-additional__input visually-hidden"
                   type="checkbox"
                   name="milk"
                   id="milk"
-                />Молоко
+                />
+              <label class="form-field-additional__label" for="milk">
+                Молоко
               </label>
-              <label class="form-field-additional__label">
-                <input
-                  class="form-field-additional__input visually-hidden"
-                  type="checkbox"
-                  name="vitamins"
-                  id="vitamins"
-                />Витамины
-              </label>
+              <input
+              class="form-field-additional__input visually-hidden"
+              type="checkbox"
+              name="vitamins"
+              id="vitamins"
+            />
+              <label class="form-field-additional__label" for="vitamins">Витамины</label>
             </div>
           </fieldset>
           <div class="submit">
@@ -335,10 +353,10 @@
         <h2 class="visually-hidden">Контакты</h2>
         <div class="contacts__text contacts__text_grey-theme">
           <p class="contacts__invitation">
-            Приглашаем к сотрудничеству дилеров!
+            Приглашаем <br> к сотрудничеству <br> дилеров!
           </p>
           <address class="contacts__address">
-            ул. Большая Конюшенная, д. 19/8
+            ул. Большая <br> Конюшенная, д. 19/8
             <span>Санкт-Петербург</span>
           </address>
         </div>
@@ -487,4 +505,5 @@
       </section>
     </footer>
   </body>
+  <script src="js/index.js"></script>
 </html>

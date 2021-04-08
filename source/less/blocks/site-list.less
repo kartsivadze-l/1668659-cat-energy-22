@@ -18,8 +18,9 @@
   .site-list {
     flex-direction: row;
     width: 478px;
-    padding-left: 132px;
-    padding-right: 110px;
+    padding-left: 250px;
+    padding-right: 50px;
+    position: relative;
   }
 }
 
@@ -60,7 +61,6 @@
 
   @media (min-width: @desktop-width) {
     color: white;
-    background-color: greenyellow; //Это временно
   }
 }
 
@@ -77,4 +77,8 @@
 
 .site-list__link_active {
   border-bottom: 2px solid#68b738;
+
+  @media (min-width: @desktop-width) {
+    border-bottom: 2px solid white;
+  }
 }
