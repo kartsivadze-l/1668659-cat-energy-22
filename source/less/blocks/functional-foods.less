@@ -38,6 +38,7 @@
     position: relative;
   }
 
+
   @media (min-width: @desktop-width) {
     width: 500px;
     height: 550px;
@@ -59,6 +60,20 @@
     margin: 0 auto;
     }
   }
+}
+
+.functional-foods_wrapper::after {
+  @media (min-width: @desktop-width) {
+  position: absolute;
+  content: "";
+  background: url("../img/bg-cat-desktop.png") no-repeat;
+  background-repeat: no-repeat;
+  top: -140px;
+  right: 0;
+  width: 720px;
+  height: 694px;
+  z-index: -1;
+}
 }
 
 /*.functional-foods__button_wrapper {
