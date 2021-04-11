@@ -117,6 +117,7 @@
                     name="cat-name"
                     id="cat-name"
                     placeholder="Барсик"
+                    required
                   />
               </div>
               <div class="form-field-cat_questionnaire-wrapper">
@@ -130,6 +131,7 @@
                     name="cat-weight"
                     id="cat-weight"
                     placeholder="7"
+                    required
                   />
                 </div>
                 <div class="form-field-cat_questionnaire-wrapper">
@@ -188,14 +190,15 @@
                 <label class="form-field-owner-contacts__label form-field-owner-contacts__label-email" for="user-email"
                   >E-mail:*
                   <input
-                    class="form-field-owner-contacts__input form-field-owner-contacts__input-email"
+                    class="form-field-owner-contacts__input status_error form-field-owner-contacts__input-email"
                     type="email"
                     name="user-email"
                     id="user-email"
                     placeholder="kuklachev@gmail.com"
+                    required
                   />
                   <svg
-                    class="form-field-owner-contacts__icon-email"
+                    class="form-field-owner-contacts__icon form-field-owner-contacts__icon-email"
                     width="20"
                     height="15"
                     viewBox="0 0 20 15"
@@ -250,9 +253,10 @@
                     name="user-phone"
                     id="user-phone"
                     placeholder="8 (960) 900-60-90"
+                    required
                   />
                   <svg
-                    class="form-field-owner-contacts__icon-phone"
+                    class="form-field-owner-contacts__icon form-field-owner-contacts__icon-phone"
                     width="20"
                     height="21"
                     viewBox="0 0 20 21"
@@ -270,7 +274,7 @@
                       />
                     </g>
                     <defs>
-                      <clipPath id="clip1">
+                      <clipPath id="clip0">
                         <rect
                           width="20"
                           height="20.0688"

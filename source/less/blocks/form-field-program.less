@@ -56,6 +56,22 @@
   }
 }
 
+.form-field-program__input:hover + .form-field-program__label::before {
+  border-color: #bababa;
+}
+
+.form-field-program__input:disabled + .form-field-program__label {
+  opacity: 0.3;
+}
+
+.form-field-program__input:disabled + .form-field-program__label::before {
+  opacity: 0.3;
+}
+
+.form-field-program__input:disabled + .form-field-program__label::after {
+  opacity: 0.3;
+}
+
 .form-field-program__input:checked + .form-field-program__label::after {
   position: absolute;
   content: "";

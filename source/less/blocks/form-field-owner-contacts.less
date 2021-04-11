@@ -57,18 +57,32 @@
   display: block;
   padding-bottom: 14px;
   position: relative;
-
-  /*@media (min-width: @desktop-width) {
-    display: inline;
-  }*/
 }
 
 .form-field-owner-contacts__input {
-  border: 1px solid #cdcdcd;
-  /*@media (min-width: @desktop-width) {
-    display: inline;
-  }*/
+  border: 1px solid #e7e7e7;
 }
+
+.form-field-owner-contacts__input:hover {
+  border-color: #cdcdcd;
+}
+
+.form-field-owner-contacts__input:focus-within {
+  border-color: #444444;
+  outline: none;
+}
+
+.form-field-owner-contacts__input:invalid {
+  border-color: #ff8282;
+}
+
+/*.form-field-owner-contacts__input:invalid + .form-field-owner-contacts__icon line {
+  stroke: #ff8282;
+}
+
+.form-field-owner-contacts__input:invalid + .form-field-owner-contacts__icon path {
+  stroke: #ff8282;
+}*/
 
 .form-field-owner-contacts__input-email {
   width: 219px;
@@ -84,6 +98,22 @@
     height: 50px;
   }
 }
+
+.form-field-owner-contacts__input-email:invalid + .form-field-owner-contacts__icon-email line {
+  stroke: #ff8282;
+}
+
+.form-field-owner-contacts__input-email:invalid + .form-field-owner-contacts__icon-email path {
+  stroke: #ff8282;
+}
+
+.form-field-owner-contacts__input-email:focus-within + .form-field-owner-contacts__icon-email line {
+stroke: #68B738;
+}
+
+.form-field-owner-contacts__input-email:focus-within + .form-field-owner-contacts__icon-email path {
+  stroke: #68B738;
+  }
 
 .form-field-owner-contacts__icon-email {
   position: absolute;
@@ -118,6 +148,18 @@
     height: 50px;
   }
 }
+
+.form-field-owner-contacts__input-phone:invalid + .form-field-owner-contacts__icon-phone g path {
+  fill: #ff8282;
+}
+
+.form-field-owner-contacts__input-phone:focus-within + .form-field-owner-contacts__icon-phone g path {
+  fill: #68B738;
+}
+
+/*.form-field-owner-contacts__input-phone:invalid + .form-field-owner-contacts__icon-phone g path {
+  fill: #ff8282;
+}*/
 
 .form-field-owner-contacts__icon-phone {
   position: absolute;
