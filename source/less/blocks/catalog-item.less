@@ -1,6 +1,7 @@
 .catalog-item {
   padding-bottom: 25px;
   box-sizing: border-box;
+  height: 200px;
 
   @media (max-width: @mobile-width-only) {
     border-bottom: 1px solid #ebebeb;
@@ -21,6 +22,39 @@
 .catalog-item_wrapper {
   padding-left: 20px;
   padding-right: 20px;
+  position: relative;
+
+  /*@media (min-width: @mobile-width-only) {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 125px;
+  outline: 1px solid violet;
+}*/
+
+  @media (min-width: @tablet-width) {
+    height: 430px;
+    /*display: flex;
+    flex-direction: column;*/
+  }
+}
+
+.catalog-item_info-wrapper {
+
+  @media (max-width: @mobile-width-only) {
+  margin-left: 50%;
+  margin-bottom: 20px;
+}
+
+ @media (min-width: @tablet-width) {
+   margin-left: 0;
+   margin-top: 80px;
+   margin-bottom: 130px;
+ }
+}
+
+.catalog-item__table {
+  width: 100%;
+  padding-right: 20px;
 }
 
 .catalog-item__name {
@@ -30,20 +64,74 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
+  color: #222222;
+
+  @media (min-width: @tablet-width) {
+    text-align: center;
+  }
 }
 
-.catalog-item-detail__title {
+.catalog-item__name br {
+  @media (min-width: @tablet-width) {
+  display: none;
+}
+}
+
+.catalog-item__name span {
+  @media (min-width: @tablet-width) {
+  display: block;
+}
+}
+
+.catalog-item__table {
   font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
   line-height: 16px;
+  color: #444444;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+  }
+}
+.catalog-item__data {
+  text-align: right;
 }
 
-.catalog-item-detail__value {
-  font-family: "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 16px;
+.catalog-item__name-link {
+  text-decoration: none;
+}
+
+.catalog-item__image {
+  position: absolute;
+  top: 20px;
+  left: 60px;
+
+  @media (min-width: @tablet-width) {
+    top: -105px;
+    left: 140px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: -115px;
+    left: 100px;
+  }
+}
+
+.catalog-item__table {
+  border-collapse: collapse;
+}
+
+.catalog-item__td {
+  @media (min-width: @tablet-width) {
+  padding-top: 5px;
+  padding-bottom: 9px;
+}
+}
+
+.catalog-item__tr {
+  @media (min-width: @tablet-width) {
+  border-bottom: 1px solid #cdcdcd;
+}
 }

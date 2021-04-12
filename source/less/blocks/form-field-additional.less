@@ -100,3 +100,19 @@
     left: 32px;
   }
 }
+
+.form-field-additional__input:hover + .form-field-additional__label::before {
+  border-color: #bababa;
+}
+
+.form-field-additional__input:disabled + .form-field-additional__label {
+  opacity: 0.3;
+}
+
+.form-field-additional__input:disabled + .form-field-additional__label::before {
+  opacity: 0.3;
+}
+
+.form-field-additional__input:disabled + .form-field-additional__label::after {
+  opacity: 0.3;
+}

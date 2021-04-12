@@ -58,10 +58,6 @@
   &:active {
     opacity: 0.3;
   }
-
-  @media (min-width: @desktop-width) {
-    color: white;
-  }
 }
 
 @media (max-width: @mobile-width-only) {
@@ -78,6 +74,18 @@
 .site-list__link_active {
   border-bottom: 2px solid#68b738;
 
+  /*@media (min-width: @desktop-width) {
+    border-bottom: 2px solid white;
+  }*/
+}
+
+.site-link_white-theme {
+  @media (min-width: @desktop-width) {
+    color: white;
+  }
+}
+
+.site-link_white-theme-active {
   @media (min-width: @desktop-width) {
     border-bottom: 2px solid white;
   }

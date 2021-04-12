@@ -19,7 +19,6 @@
   position: absolute;
   top: -25px;
   left: 0;
-
 }
 
 .form-field-owner-contacts__title br {
@@ -30,6 +29,7 @@
 
 .form-field-owner-contacts_wrapper {
   display: grid;
+
   @media (max-width: @mobile-width-only) {
     grid-template-rows: 1fr 1fr;
     row-gap: 14px;
@@ -40,9 +40,10 @@
     row-gap: 20px;
   }
 
-  @media (min-width: @desktop-width) {
+   @media (min-width: @desktop-width) {
     grid-template-columns: 1fr 1fr;
     column-gap: 78px;
+    width: 1220px;
   }
 }
 
@@ -59,7 +60,20 @@
 }
 
 .form-field-owner-contacts__input {
-  border: 1px solid #cdcdcd;
+  border: 1px solid #e7e7e7;
+}
+
+.form-field-owner-contacts__input:hover {
+  border-color: #cdcdcd;
+}
+
+.form-field-owner-contacts__input:focus-within {
+  border-color: #444444;
+  outline: none;
+}
+
+.form-field-owner-contacts__input:invalid:not(:placeholder-shown) {
+  border-color: #ff8282;
 }
 
 .form-field-owner-contacts__input-email {
@@ -77,6 +91,22 @@
   }
 }
 
+.form-field-owner-contacts__input-email:invalid:not(:placeholder-shown) + .form-field-owner-contacts__icon-email line {
+  stroke: #ff8282;
+}
+
+.form-field-owner-contacts__input-email:invalid:not(:placeholder-shown) + .form-field-owner-contacts__icon-email path {
+  stroke: #ff8282;
+}
+
+.form-field-owner-contacts__input-email:focus-within + .form-field-owner-contacts__icon-email line {
+stroke: #68B738;
+}
+
+.form-field-owner-contacts__input-email:focus-within + .form-field-owner-contacts__icon-email path {
+  stroke: #68B738;
+  }
+
 .form-field-owner-contacts__icon-email {
   position: absolute;
 
@@ -91,8 +121,8 @@
  }
 
  @media (min-width: @desktop-width) {
-  top: 37px;
-  left: 450px;
+  top: 15px;
+  left: 495px;
 }
 }
 
@@ -111,6 +141,14 @@
   }
 }
 
+.form-field-owner-contacts__input-phone:invalid:not(:placeholder-shown) + .form-field-owner-contacts__icon-phone g path {
+  fill: #ff8282;
+}
+
+.form-field-owner-contacts__input-phone:focus-within + .form-field-owner-contacts__icon-phone g path {
+  fill: #68B738;
+}
+
 .form-field-owner-contacts__icon-phone {
   position: absolute;
 
@@ -125,8 +163,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    top: 33px;
-    left: 450px;
+    top: 15px;
+    left: 495px;
   }
 }
 

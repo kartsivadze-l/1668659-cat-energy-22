@@ -1,12 +1,33 @@
 .promo-text_wrapper {
   margin: 39px 20px 35px 20px;
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+  }
 }
 
 .promo-text {
+  z-index: -1;
   font-family: "Arial", sans-serif;
-  font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 20px;
+  color: white;
+
+  @media (max-width: @mobile-width-only) {
+  margin-top: 190px;
   text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  margin-top: 50px;
+  text-align: left;
+  margin-left: 450px;
+}
+
+@media (min-width: @desktop-width) {
+  margin-left: 0;
+  text-align: center;
+  margin-top: 180px;
+}
 }
