@@ -7,8 +7,25 @@
   }
 
   @media (min-width: @desktop-width) {
-    background-color: #f2f2f2;
+    padding: 0;
   }
+}
+
+.example_info-image-wrapper {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    background: linear-gradient(to right, #f2f2f2 73%, #eaeaea 73%);
+    position: relative;
+  }
+}
+
+.example_info-wrapper {
+  @media (min-width: @desktop-width) {
+  display: flex;
+  flex-direction: column;
+  padding-top: 70px;
+  padding-left: 110px;
+}
 }
 
 .example__title {
@@ -16,6 +33,12 @@
   font-weight: normal;
   font-size: 36px;
   line-height: 40px;
+
+  @media (min-width: @desktop-width) {
+    padding-left: 110px;
+    margin: 0;
+    margin-bottom: 76px;
+  }
 }
 
 .example__description {
@@ -23,4 +46,12 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
+}
+
+.example__description br {
+    display: none;
+
+    @media (min-width: @desktop-width) {
+      display: block;
+    }
 }
