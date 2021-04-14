@@ -1,7 +1,26 @@
+.contacts {
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+  }
+}
+
 .contacts__text {
   padding: 28px 19px 26px 19px;
   display: flex;
   justify-content: space-between;
+  background-color: #f2f2f2;
+  box-sizing: border-box;
+
+  @media (min-width: @desktop-width) {
+    background-color: white;
+    width: 570px;
+    height: 201px;
+    position: absolute;
+    top: 120px;
+    left: 100px;
+    padding: 62px 89px 59px 76px;
+  }
 }
 
 .contacts__invitation {
@@ -10,6 +29,16 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  @media (min-width: @desktop-width) {
+    line-height: 21px;
+    margin: 0;
+  }
 }
 
 .contacts__address {
@@ -18,6 +47,10 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 20px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+  }
 }
 
 .contacts__address span {
