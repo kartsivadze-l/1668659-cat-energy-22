@@ -1,6 +1,20 @@
 .functional-foods {
   box-sizing: border-box;
   position: relative;
+
+  @media (min-width: @desktop-width) {
+    &::after {
+      position: absolute;
+      content: "";
+      background: url("../img/bg-cat-desktop@1x.png") no-repeat;
+      background-repeat: no-repeat;
+      top: -160px;
+      right: 0;
+      width: 50%;
+      height: 694px;
+      z-index: -1;
+    }
+  }
 }
 
 .functional-foods__title {
@@ -18,7 +32,7 @@
   @media (min-width: @tablet-width) {
     text-align: left;
     font-size: 60px;
-  line-height: 60px;
+    line-height: 60px;
   }
 }
 
@@ -61,7 +75,6 @@
     padding-left: 83px;
   }
 
-
   @media (min-width: @desktop-width) {
     width: 500px;
     height: 550px;
@@ -70,38 +83,37 @@
 
   &::before {
     @media (max-width: @mobile-width-only) {
-    position: absolute;
-    content: "";
-    background-image: url("../img/bg-cat-mobile@1x.png");
-    background-repeat: no-repeat;
-    opacity: 0.15;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 320px;
-    height: 302px;
-    margin: 0 auto;
+      position: absolute;
+      content: "";
+      background-image: url("../img/bg-cat-mobile@1x.png");
+      background-repeat: no-repeat;
+      opacity: 0.15;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      width: 320px;
+      height: 302px;
+      margin: 0 auto;
     }
   }
 }
 
-.functional-foods_wrapper::after {
+/*.functional-foods_wrapper::after {
   @media (min-width: @desktop-width) {
-  position: absolute;
-  content: "";
-  background: url("../img/bg-cat-desktop@1x.png") no-repeat;
-  background-repeat: no-repeat;
-  top: -140px;
-  right: 0;
-  width: 50%;
-  height: 694px;
-  z-index: -1;
-}
-}
+    position: absolute;
+    content: "";
+    background: url("../img/bg-cat-desktop@1x.png") no-repeat;
+    background-repeat: no-repeat;
+    top: -140px;
+    right: 0;
+    width: 50%;
+    height: 694px;
+    z-index: -1;
+  }
+}*/
 
 .functional-foods__button {
-
   @media (max-width: @mobile-width-only) {
     margin-top: 300px;
   }
