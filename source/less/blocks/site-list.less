@@ -18,8 +18,7 @@
   .site-list {
     flex-direction: row;
     width: 478px;
-    padding-left: 250px;
-    padding-right: 50px;
+    margin-left: 525px;
     position: relative;
   }
 }
@@ -51,6 +50,16 @@
   line-height: 20px;
   box-sizing: border-box;
 
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
   &:hover {
     opacity: 0.6;
   }
@@ -72,6 +81,7 @@
 }
 
 .site-list__link_active {
+  padding-bottom: 5px;
   border-bottom: 2px solid#68b738;
 }
 

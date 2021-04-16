@@ -19,16 +19,20 @@
   font-size: 16px;
   line-height: 18px;
 
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (max-width: @mobile-width-only) {
     padding-top: 6px;
   }
 }
 
-.copyright__link-logo:hover svg path {
+ .copyright__logo:hover {
   fill: #68b738;
 }
 
-.copyright__link-logo:active svg path {
+.copyright__link-logo:active {
   opacity: 0.3;
 }
 
