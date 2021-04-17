@@ -2,12 +2,12 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML Academy: Кэт энерджи</title>
-    <link rel="icon" href="favicon.ico">
-    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="img/favicons/180.png">
-    <link rel="manifest" href="favicons.webmanifest">
+    <link rel="icon" href="favicon.ico" />
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="img/favicons/180.png" />
+    <link rel="manifest" href="favicons.webmanifest" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body class="page__body">
@@ -15,15 +15,17 @@
       <header class="page-header">
         <div class="logo-title">
           <a class="page-header__logo" href="index.html">
-              <picture>
-                <source media="(min-width: 1220px)" srcset="img/logo-desktop.svg">
-                <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-                <img
-                  class="page-header__logo-image"
-                  src="img/logo-mobile.svg"
-
-                  alt="Логотип Кэт энерджи"
-                />
+            <picture>
+              <source
+                media="(min-width: 1220px)"
+                srcset="img/logo-desktop.svg"
+              />
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" />
+              <img
+                class="page-header__logo-image"
+                src="img/logo-mobile.svg"
+                alt="Логотип Кэт энерджи"
+              />
             </picture>
           </a>
         </div>
@@ -33,12 +35,12 @@
           </button>
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a class="site-list__link" href="index.html"
-                >Главная</a
-              >
+              <a class="site-list__link" href="index.html">Главная</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link site-list__link_active" href="#">Каталог продукции</a>
+              <a class="site-list__link site-list__link_active" href="#"
+                >Каталог продукции</a
+              >
             </li>
             <li class="site-list__item">
               <a class="site-list__link" href="form.html">Подбор программы</a>
@@ -55,51 +57,75 @@
           <li class="catalog-item">
             <div class="catalog-item_wrapper">
               <div class="catalog-item_info-wrapper">
-              <a class="catalog-item__name-link" aria-label="Перейти на страницу с описанием товара" href="#">
-              <h3 class="catalog-item__name">Cat Energy <br> PRO <span>500 г</span></h3>
-            </a>
-              <table class="catalog-item__table">
-                <tr class="catalog-item__tr">
-                  <td class="catalog-item__td">Масса</td>
-                  <td class="catalog-item__td catalog-item__data">500 г</td>
-                </tr>
-                <tr class="catalog-item__tr">
-                  <td class="catalog-item__td">Вкус</td>
-                  <td class="catalog-item__td catalog-item__data">Курица</td>
-                </tr>
-                <tr class="catalog-item__tr">
-                  <td class="catalog-item__td">Цена</td>
-                  <td class="catalog-item__td catalog-item__data">700 Р.</td>
-                </tr>
-              </table>
-            </div>
-            <a class="catalog-item__image-link" href="#" aria-label="Перейти на страницу с описанием товара">
-              <picture>
-                <source media="(min-width: 768px)" srcset="img/catalog-item1-desktop@1x.png, img/catalog-item1-desktop@2x.png 2x">
-                <img
-                  class="catalog-item__image"
-                  src="img/catalog-item1-mobile@1x.png"
-                  srcset="img/catalog-item1-mobile@2x.png 2x"
-                  alt="Корм Cat Energy Pro с курицей объемом 500 граммов"
-                />
-              </picture>
-            </a>
-              <div class="catalog-item__order-button_wrapper">
+                <a
+                  class="catalog-item__name-link"
+                  aria-label="Перейти на страницу с описанием товара"
+                  href="#"
+                >
+                  <h3 class="catalog-item__name">
+                    Cat Energy <br />
+                    PRO <span>500 г</span>
+                  </h3>
+                </a>
+                <table class="catalog-item__table">
+                  <tr class="catalog-item__tr">
+                    <td class="catalog-item__td">Масса</td>
+                    <td class="catalog-item__td catalog-item__data">500 г</td>
+                  </tr>
+                  <tr class="catalog-item__tr">
+                    <td class="catalog-item__td">Вкус</td>
+                    <td class="catalog-item__td catalog-item__data">Курица</td>
+                  </tr>
+                  <tr class="catalog-item__tr">
+                    <td class="catalog-item__td">Цена</td>
+                    <td class="catalog-item__td catalog-item__data">700 Р.</td>
+                  </tr>
+                </table>
+              </div>
               <a
-                class="button catalog-item__order-button"
-                aria-label="Добавить корм Cat Energy Pro с курицей объемом 500 граммов а корзину и перейти на страницу оформления заказа"
+                class="catalog-item__image-link"
                 href="#"
-                >Заказать</a
+                aria-label="Перейти на страницу с описанием товара"
               >
-            </div>
+                <picture>
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/catalog-item1-desktop@1x.png,
+                      img/catalog-item1-desktop@2x.png 2x
+                    "
+                  />
+                  <img
+                    class="catalog-item__image"
+                    src="img/catalog-item1-mobile@1x.png"
+                    srcset="img/catalog-item1-mobile@2x.png 2x"
+                    alt="Корм Cat Energy Pro с курицей объемом 500 граммов"
+                  />
+                </picture>
+              </a>
+              <div class="catalog-item__order-button_wrapper">
+                <a
+                  class="button catalog-item__order-button"
+                  aria-label="Добавить корм Cat Energy Pro с курицей объемом 500 граммов а корзину и перейти на страницу оформления заказа"
+                  href="#"
+                  >Заказать</a
+                >
+              </div>
             </div>
           </li>
           <li class="catalog-item">
             <div class="catalog-item_wrapper">
               <div class="catalog-item_info-wrapper">
-                <a class="catalog-item__name-link" href="#" aria-label="Перейти на страницу с описанием товара">
-                <h3 class="catalog-item__name">Cat Energy <br> PRO <span>1000 г</span></h3>
-              </a>
+                <a
+                  class="catalog-item__name-link"
+                  href="#"
+                  aria-label="Перейти на страницу с описанием товара"
+                >
+                  <h3 class="catalog-item__name">
+                    Cat Energy <br />
+                    PRO <span>1000 г</span>
+                  </h3>
+                </a>
                 <table class="catalog-item__table">
                   <tr class="catalog-item__tr">
                     <td class="catalog-item__td">Масса</td>
@@ -115,76 +141,109 @@
                   </tr>
                 </table>
               </div>
-              <a class="catalog-item__image-link" href="#" aria-label="Перейти на страницу с описанием товара">
-
-              <picture>
-                <source media="(min-width: 768px)" srcset="img/catalog-item2-desktop@1x.png, img/catalog-item2-desktop@2x.png 2x">
-                <img
-                  class="catalog-item__image"
-                  src="img/catalog-item2-mobile@1x.png"
-                  srcset="img/catalog-item2-mobile@2x.png 2x"
-                  alt="Корм Cat Energy Pro с курицей объемом 1000 граммов"
-                />
-              </picture>
-            </a>
-              <div class="catalog-item__order-button_wrapper">
               <a
-                class="button catalog-item__order-button"
-                aria-label="Добавить корм Cat Energy Pro с курицей объемом 1000 граммов а корзину и перейти на страницу оформления заказа"
+                class="catalog-item__image-link"
                 href="#"
-                >Заказать</a
+                aria-label="Перейти на страницу с описанием товара"
               >
-            </div>
-            </div>
-          </li>
-          <li class="catalog-item">
-            <div class="catalog-item_wrapper">
-                <div class="catalog-item_info-wrapper">
-                  <a class="catalog-item__name-link" href="#" aria-label="Перейти на страницу с описанием товара">
-                  <h3 class="catalog-item__name">Cat Energy <br> PRO <span>500 г</span></h3>
-                </a>
-                  <table class="catalog-item__table">
-                    <tr class="catalog-item__tr">
-                      <td class="catalog-item__td">Масса</td>
-                      <td class="catalog-item__td catalog-item__data">500 г</td>
-                    </tr>
-                    <tr class="catalog-item__tr">
-                      <td class="catalog-item__td">Вкус</td>
-                      <td class="catalog-item__td catalog-item__data">Рыба</td>
-                    </tr>
-                    <tr class="catalog-item__tr">
-                      <td class="catalog-item__td">Цена</td>
-                      <td class="catalog-item__td catalog-item__data">700 Р.</td>
-                    </tr>
-                  </table>
-                </div>
-                <a class="catalog-item__image-link" href="#" aria-label="Перейти на страницу с описанием товара">
-              <picture>
-                <source media="(min-width: 768px)" srcset="img/catalog-item3-desktop@1x.png, img/catalog-item3-desktop@2x.png 2x">
-                <img
-                  class="catalog-item__image"
-                  src="img/catalog-item3-mobile@1x.png"
-                  srcset="img/catalog-item3-mobile@2x.png 2x"
-                  alt="Корм Cat Energy Pro с рыбой объемом 500 граммов"
-                />
-              </picture>
-            </a>
+                <picture>
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/catalog-item2-desktop@1x.png,
+                      img/catalog-item2-desktop@2x.png 2x
+                    "
+                  />
+                  <img
+                    class="catalog-item__image"
+                    src="img/catalog-item2-mobile@1x.png"
+                    srcset="img/catalog-item2-mobile@2x.png 2x"
+                    alt="Корм Cat Energy Pro с курицей объемом 1000 граммов"
+                  />
+                </picture>
+              </a>
               <div class="catalog-item__order-button_wrapper">
-              <a
-                class="button catalog-item__order-button"
-                aria-label="Добавить корм Cat Energy Pro с рыбой объемом 500 граммов а корзину и перейти на страницу оформления заказа"
-                href="#"
-                >Заказать</a
-              >
-            </div>
+                <a
+                  class="button catalog-item__order-button"
+                  aria-label="Добавить корм Cat Energy Pro с курицей объемом 1000 граммов а корзину и перейти на страницу оформления заказа"
+                  href="#"
+                  >Заказать</a
+                >
+              </div>
             </div>
           </li>
           <li class="catalog-item">
             <div class="catalog-item_wrapper">
               <div class="catalog-item_info-wrapper">
-                <a class="catalog-item__name-link" href="#" aria-label="Перейти на страницу с описанием товара">
-                <h3 class="catalog-item__name">Cat Energy <br> PRO <span>1000 г</span></h3>
+                <a
+                  class="catalog-item__name-link"
+                  href="#"
+                  aria-label="Перейти на страницу с описанием товара"
+                >
+                  <h3 class="catalog-item__name">
+                    Cat Energy <br />
+                    PRO <span>500 г</span>
+                  </h3>
+                </a>
+                <table class="catalog-item__table">
+                  <tr class="catalog-item__tr">
+                    <td class="catalog-item__td">Масса</td>
+                    <td class="catalog-item__td catalog-item__data">500 г</td>
+                  </tr>
+                  <tr class="catalog-item__tr">
+                    <td class="catalog-item__td">Вкус</td>
+                    <td class="catalog-item__td catalog-item__data">Рыба</td>
+                  </tr>
+                  <tr class="catalog-item__tr">
+                    <td class="catalog-item__td">Цена</td>
+                    <td class="catalog-item__td catalog-item__data">700 Р.</td>
+                  </tr>
+                </table>
+              </div>
+              <a
+                class="catalog-item__image-link"
+                href="#"
+                aria-label="Перейти на страницу с описанием товара"
+              >
+                <picture>
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/catalog-item3-desktop@1x.png,
+                      img/catalog-item3-desktop@2x.png 2x
+                    "
+                  />
+                  <img
+                    class="catalog-item__image"
+                    src="img/catalog-item3-mobile@1x.png"
+                    srcset="img/catalog-item3-mobile@2x.png 2x"
+                    alt="Корм Cat Energy Pro с рыбой объемом 500 граммов"
+                  />
+                </picture>
               </a>
+              <div class="catalog-item__order-button_wrapper">
+                <a
+                  class="button catalog-item__order-button"
+                  aria-label="Добавить корм Cat Energy Pro с рыбой объемом 500 граммов а корзину и перейти на страницу оформления заказа"
+                  href="#"
+                  >Заказать</a
+                >
+              </div>
+            </div>
+          </li>
+          <li class="catalog-item">
+            <div class="catalog-item_wrapper">
+              <div class="catalog-item_info-wrapper">
+                <a
+                  class="catalog-item__name-link"
+                  href="#"
+                  aria-label="Перейти на страницу с описанием товара"
+                >
+                  <h3 class="catalog-item__name">
+                    Cat Energy <br />
+                    PRO <span>1000 г</span>
+                  </h3>
+                </a>
                 <table class="catalog-item__table">
                   <tr class="catalog-item__tr">
                     <td class="catalog-item__td">Масса</td>
@@ -200,33 +259,50 @@
                   </tr>
                 </table>
               </div>
-              <a class="catalog-item__image-link" href="#" aria-label="Перейти на страницу с описанием товара">
-              <picture>
-                <source media="(min-width: 768px)" srcset="img/catalog-item4-desktop@1x.png, img/catalog-item4-desktop@2x.png 2x">
-                <img
-                  class="catalog-item__image"
-                  src="img/catalog-item4-mobile@1x.png"
-                  srcset="img/catalog-item4-mobile@2x.png 2x"
-                  alt="Корм Cat Energy Pro с рыбой объемом 1000 граммов"
-                />
-              </picture>
-            </a>
-              <div class="catalog-item__order-button_wrapper">
               <a
-                class="button catalog-item__order-button"
-                aria-label="Добавить корм Cat Energy Pro с рыбой объемом 1000 граммов а корзину и перейти на страницу оформления заказа"
+                class="catalog-item__image-link"
                 href="#"
-                >Заказать</a
+                aria-label="Перейти на страницу с описанием товара"
               >
-            </div>
+                <picture>
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/catalog-item4-desktop@1x.png,
+                      img/catalog-item4-desktop@2x.png 2x
+                    "
+                  />
+                  <img
+                    class="catalog-item__image"
+                    src="img/catalog-item4-mobile@1x.png"
+                    srcset="img/catalog-item4-mobile@2x.png 2x"
+                    alt="Корм Cat Energy Pro с рыбой объемом 1000 граммов"
+                  />
+                </picture>
+              </a>
+              <div class="catalog-item__order-button_wrapper">
+                <a
+                  class="button catalog-item__order-button"
+                  aria-label="Добавить корм Cat Energy Pro с рыбой объемом 1000 граммов а корзину и перейти на страницу оформления заказа"
+                  href="#"
+                  >Заказать</a
+                >
+              </div>
             </div>
           </li>
           <li class="catalog-item">
             <div class="catalog-item_wrapper">
               <div class="catalog-item_info-wrapper">
-                <a class="catalog-item__name-link" href="#" aria-label="Перейти на страницу с описанием товара">
-                <h3 class="catalog-item__name">Cat Energy <br> Slim <span>500 г</span></h3>
-              </a>
+                <a
+                  class="catalog-item__name-link"
+                  href="#"
+                  aria-label="Перейти на страницу с описанием товара"
+                >
+                  <h3 class="catalog-item__name">
+                    Cat Energy <br />
+                    Slim <span>500 г</span>
+                  </h3>
+                </a>
                 <table class="catalog-item__table">
                   <tr class="catalog-item__tr">
                     <td class="catalog-item__td">Масса</td>
@@ -242,33 +318,50 @@
                   </tr>
                 </table>
               </div>
-              <a class="catalog-item__image-link" href="#" aria-label="Перейти на страницу с описанием товара">
-              <picture>
-                <source media="(min-width: 768px)" srcset="img/catalog-item5-desktop@1x.png, img/catalog-item5-desktop@2x.png 2x">
-                <img
-                  class="catalog-item__image"
-                  src="img/catalog-item5-mobile@1x.png"
-                  srcset="img/catalog-item5-mobile@2x.png 2x"
-                  alt="Корм Cat Energy Slim с гречкой объемом 500 граммов"
-                />
-              </picture>
-            </a>
-              <div class="catalog-item__order-button_wrapper">
               <a
-                class="button catalog-item__order-button"
-                aria-label="Добавить корм Cat Energy Slim с гречкой объемом 500 граммов а корзину и перейти на страницу оформления заказа"
+                class="catalog-item__image-link"
                 href="#"
-                >Заказать</a
+                aria-label="Перейти на страницу с описанием товара"
               >
-            </div>
+                <picture>
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/catalog-item5-desktop@1x.png,
+                      img/catalog-item5-desktop@2x.png 2x
+                    "
+                  />
+                  <img
+                    class="catalog-item__image"
+                    src="img/catalog-item5-mobile@1x.png"
+                    srcset="img/catalog-item5-mobile@2x.png 2x"
+                    alt="Корм Cat Energy Slim с гречкой объемом 500 граммов"
+                  />
+                </picture>
+              </a>
+              <div class="catalog-item__order-button_wrapper">
+                <a
+                  class="button catalog-item__order-button"
+                  aria-label="Добавить корм Cat Energy Slim с гречкой объемом 500 граммов а корзину и перейти на страницу оформления заказа"
+                  href="#"
+                  >Заказать</a
+                >
+              </div>
             </div>
           </li>
           <li class="catalog-item">
             <div class="catalog-item_wrapper">
               <div class="catalog-item_info-wrapper">
-                <a class="catalog-item__name-link" href="#" aria-label="Перейти на страницу с описанием товара">
-                <h3 class="catalog-item__name">Cat Energy <br> Slim <span>1000 г</span></h3>
-              </a>
+                <a
+                  class="catalog-item__name-link"
+                  href="#"
+                  aria-label="Перейти на страницу с описанием товара"
+                >
+                  <h3 class="catalog-item__name">
+                    Cat Energy <br />
+                    Slim <span>1000 г</span>
+                  </h3>
+                </a>
                 <table class="catalog-item__table">
                   <tr class="catalog-item__tr">
                     <td class="catalog-item__td">Масса</td>
@@ -282,35 +375,52 @@
                     <td class="catalog-item__td">Цена</td>
                     <td class="catalog-item__td catalog-item__data">700 Р.</td>
                   </tr>
-                  </table>
-                  </div>
-                  <a class="catalog-item__image-link" href="#" aria-label="Перейти на страницу описания товара">
-              <picture>
-                <source media="(min-width: 768px)" srcset="img/catalog-item6-desktop@1x.png, img/catalog-item6-desktop@2x.png 2x">
-                <img
-                  class="catalog-item__image"
-                  src="img/catalog-item6-mobile@1x.png"
-                  srcset="img/catalog-item6-mobile@2x.png 2x"
-                  alt="Корм Cat Energy Slim с гречкой объемом 1000 граммов"
-                />
-              </picture>
-            </a>
-              <div class="catalog-item__order-button_wrapper">
+                </table>
+              </div>
               <a
-                class="button catalog-item__order-button"
-                aria-label="Добавить корм Cat Energy Slim с гречкой объемом 1000 граммов а корзину и перейти на страницу оформления заказа"
+                class="catalog-item__image-link"
                 href="#"
-                >Заказать</a
+                aria-label="Перейти на страницу описания товара"
               >
-            </div>
+                <picture>
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/catalog-item6-desktop@1x.png,
+                      img/catalog-item6-desktop@2x.png 2x
+                    "
+                  />
+                  <img
+                    class="catalog-item__image"
+                    src="img/catalog-item6-mobile@1x.png"
+                    srcset="img/catalog-item6-mobile@2x.png 2x"
+                    alt="Корм Cat Energy Slim с гречкой объемом 1000 граммов"
+                  />
+                </picture>
+              </a>
+              <div class="catalog-item__order-button_wrapper">
+                <a
+                  class="button catalog-item__order-button"
+                  aria-label="Добавить корм Cat Energy Slim с гречкой объемом 1000 граммов а корзину и перейти на страницу оформления заказа"
+                  href="#"
+                  >Заказать</a
+                >
+              </div>
             </div>
           </li>
           <li class="catalog-item">
             <div class="catalog-item_wrapper">
               <div class="catalog-item_info-wrapper">
-                <a class="catalog-item__name-link" href="#" aria-label="Перейти на страницу с описанием товара">
-                <h3 class="catalog-item__name">Cat Energy <br> Slim <span>500 г</span></h3>
-              </a>
+                <a
+                  class="catalog-item__name-link"
+                  href="#"
+                  aria-label="Перейти на страницу с описанием товара"
+                >
+                  <h3 class="catalog-item__name">
+                    Cat Energy <br />
+                    Slim <span>500 г</span>
+                  </h3>
+                </a>
                 <table class="catalog-item__table">
                   <tr class="catalog-item__tr">
                     <td class="catalog-item__td">Масса</td>
@@ -324,27 +434,37 @@
                     <td class="catalog-item__td">Цена</td>
                     <td class="catalog-item__td catalog-item__data">500 Р.</td>
                   </tr>
-                  </table>
-                  </div>
-                  <a class="catalog-item__image-link" href="#" aria-label="Перейти на страницу с описанием товара">
-              <picture>
-                <source media="(min-width: 768px)" srcset="img/catalog-item7-desktop@1x.png, img/catalog-item7-desktop@2x.png 2x">
-                <img
-                  class="catalog-item__image"
-                  src="img/catalog-item7-mobile@1x.png"
-                  srcset="img/catalog-item7-mobile@2x.png 2x"
-                  alt="Корм Cat Energy Slim с рисом объемом 500 граммов"
-                />
-              </picture>
-            </a>
-              <div class="catalog-item__order-button_wrapper">
+                </table>
+              </div>
               <a
-                class="button catalog-item__order-button"
-                aria-label="Добавить корм Cat Energy Slim с рисом объемом 500 граммов а корзину и перейти на страницу оформления заказа"
+                class="catalog-item__image-link"
                 href="#"
-                >Заказать</a
+                aria-label="Перейти на страницу с описанием товара"
               >
-            </div>
+                <picture>
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/catalog-item7-desktop@1x.png,
+                      img/catalog-item7-desktop@2x.png 2x
+                    "
+                  />
+                  <img
+                    class="catalog-item__image"
+                    src="img/catalog-item7-mobile@1x.png"
+                    srcset="img/catalog-item7-mobile@2x.png 2x"
+                    alt="Корм Cat Energy Slim с рисом объемом 500 граммов"
+                  />
+                </picture>
+              </a>
+              <div class="catalog-item__order-button_wrapper">
+                <a
+                  class="button catalog-item__order-button"
+                  aria-label="Добавить корм Cat Energy Slim с рисом объемом 500 граммов а корзину и перейти на страницу оформления заказа"
+                  href="#"
+                  >Заказать</a
+                >
+              </div>
             </div>
           </li>
           <li class="show-all-goods">
@@ -355,7 +475,11 @@
               >
             </p>
             <div class="show-all-goods__button_wrapper">
-              <a class="button show-all-goods__button" href="#" aria-label="Просмотреть все новые товары">
+              <a
+                class="button show-all-goods__button"
+                href="#"
+                aria-label="Просмотреть все новые товары"
+              >
                 Показать все
               </a>
             </div>
@@ -363,112 +487,136 @@
         </ul>
       </section>
       <div class="all-additional-options container">
-      <section class="catalog-additional-goods">
-        <h2 class="catalog-additional-goods__title">Дополнительные товары</h2>
-        <ul class="catalog-additional-goods-list">
-          <li class="catalog-additional-goods-item catalog-additional-goods-item-sweetener">
-            <div class="catalog-additional-goods-item_info-wrapper">
-            <a class="catalog-additional-goods-item__title-link" aria-label="Перейти на страницу с описанием товара" href="#">
-            <h3 class="catalog-additional-goods-item__title">
-              Сахарозаменитель
-            </h3>
-          </a>
-            <dl class="catalog-additional-goods-item__details">
-              <dt class="catalog-additional-goods-item-detail__title">
-                1 упаковка (100 г)
-              </dt>
-              <dd class="catalog-additional-goods-item-detail__value">
-                200 Р.
-              </dd>
-            </dl>
-          </div>
-         <div class="order-button_wrapper">
-            <a
-              class="button order-button"
-              aria-label="Добавить упаковку сахарозаменителя объемом 100 граммов в корзину и перейти на страницу оформления заказа"
-              href="#"
-              >Заказать</a
+        <section class="catalog-additional-goods">
+          <h2 class="catalog-additional-goods__title">Дополнительные товары</h2>
+          <ul class="catalog-additional-goods-list">
+            <li
+              class="catalog-additional-goods-item catalog-additional-goods-item-sweetener"
             >
+              <div class="catalog-additional-goods-item_info-wrapper">
+                <a
+                  class="catalog-additional-goods-item__title-link"
+                  aria-label="Перейти на страницу с описанием товара"
+                  href="#"
+                >
+                  <h3 class="catalog-additional-goods-item__title">
+                    Сахарозаменитель
+                  </h3>
+                </a>
+                <dl class="catalog-additional-goods-item__details">
+                  <dt class="catalog-additional-goods-item-detail__title">
+                    1 упаковка (100 г)
+                  </dt>
+                  <dd class="catalog-additional-goods-item-detail__value">
+                    200 Р.
+                  </dd>
+                </dl>
+              </div>
+              <div class="order-button_wrapper">
+                <a
+                  class="button order-button"
+                  aria-label="Добавить упаковку сахарозаменителя объемом 100 граммов в корзину и перейти на страницу оформления заказа"
+                  href="#"
+                  >Заказать</a
+                >
+              </div>
+            </li>
+            <li class="catalog-additional-goods-item">
+              <div class="catalog-additional-goods-item_info-wrapper">
+                <a
+                  class="catalog-additional-goods-item__title-link"
+                  aria-label="Перейти на страницу с описанием товара"
+                  href="#"
+                >
+                  <h3 class="catalog-additional-goods-item__title">
+                    Питьевая вода
+                  </h3>
+                </a>
+                <dl class="catalog-additional-goods-item__details">
+                  <dt class="catalog-additional-goods-item-detail__title">
+                    5 литров
+                  </dt>
+                  <dd class="catalog-additional-goods-item-detail__value">
+                    50 Р.
+                  </dd>
+                </dl>
+              </div>
+              <div class="order-button_wrapper">
+                <a
+                  class="button order-button"
+                  aria-label="Добавить упаковку пятилитровую бутылку питьевой воды в корзину и перейти на страницу оформления заказа"
+                  href="#"
+                  >Заказать</a
+                >
+              </div>
+            </li>
+            <li class="catalog-additional-goods-item">
+              <div class="catalog-additional-goods-item_info-wrapper">
+                <a
+                  class="catalog-additional-goods-item__title-link"
+                  aria-label="Перейти на страницу с описанием товара"
+                  href="#"
+                >
+                  <h3 class="catalog-additional-goods-item__title">Молоко</h3>
+                </a>
+                <dl class="catalog-additional-goods-item__details">
+                  <dt class="catalog-additional-goods-item-detail__title">
+                    1 литр
+                  </dt>
+                  <dd class="catalog-additional-goods-item-detail__value">
+                    100 Р.
+                  </dd>
+                </dl>
+              </div>
+              <div class="order-button_wrapper">
+                <a
+                  class="button order-button"
+                  aria-label="Добавить литровый пакет молока в корзину и перейти на страницу оформления заказа"
+                  href="#"
+                  >Заказать</a
+                >
+              </div>
+            </li>
+            <li class="catalog-additional-goods-item">
+              <div class="catalog-additional-goods-item_info-wrapper">
+                <a
+                  class="catalog-additional-goods-item__title-link"
+                  aria-label="Перейти на страницу с описанием товара"
+                  href="#"
+                >
+                  <h3 class="catalog-additional-goods-item__title">Витамины</h3>
+                </a>
+                <dl class="catalog-additional-goods-item__details">
+                  <dt class="catalog-additional-goods-item-detail__title">
+                    1 упаковка (30 г)
+                  </dt>
+                  <dd class="catalog-additional-goods-item-detail__value">
+                    300 Р.
+                  </dd>
+                </dl>
+              </div>
+              <div class="order-button_wrapper">
+                <a
+                  class="button order-button"
+                  aria-label="Добавить упаковку витаминов объемом 30 граммов в корзину и перейти на страницу оформления заказа"
+                  href="#"
+                  >Заказать</a
+                >
+              </div>
+            </li>
+          </ul>
+        </section>
+        <section class="promo">
+          <h2 class="visually-hidden">Промо-акция от Cat Energy</h2>
+          <div class="promo-text_wrapper">
+            <p class="promo-text">
+              Закажите все <br />
+              и получите чехол для <br />
+              кота в подарок!
+            </p>
           </div>
-          </li>
-          <li class="catalog-additional-goods-item">
-            <div class="catalog-additional-goods-item_info-wrapper">
-            <a class="catalog-additional-goods-item__title-link" aria-label="Перейти на страницу с описанием товара" href="#">
-            <h3 class="catalog-additional-goods-item__title">Питьевая вода</h3>
-          </a>
-            <dl class="catalog-additional-goods-item__details">
-              <dt class="catalog-additional-goods-item-detail__title">
-                5 литров
-              </dt>
-              <dd class="catalog-additional-goods-item-detail__value">50 Р.</dd>
-            </dl>
-          </div>
-          <div class="order-button_wrapper">
-            <a
-              class="button order-button"
-              aria-label="Добавить упаковку пятилитровую бутылку питьевой воды в корзину и перейти на страницу оформления заказа"
-              href="#"
-              >Заказать</a
-            >
-          </div>
-          </li>
-          <li class="catalog-additional-goods-item">
-            <div class="catalog-additional-goods-item_info-wrapper">
-            <a class="catalog-additional-goods-item__title-link" aria-label="Перейти на страницу с описанием товара" href="#">
-            <h3 class="catalog-additional-goods-item__title">Молоко</h3>
-          </a>
-            <dl class="catalog-additional-goods-item__details">
-              <dt class="catalog-additional-goods-item-detail__title">
-                1 литр
-              </dt>
-              <dd class="catalog-additional-goods-item-detail__value">
-                100 Р.
-              </dd>
-            </dl>
-          </div>
-          <div class="order-button_wrapper">
-            <a
-              class="button order-button"
-              aria-label="Добавить литровый пакет молока в корзину и перейти на страницу оформления заказа"
-              href="#"
-              >Заказать</a
-            >
-          </div>
-          </li>
-          <li class="catalog-additional-goods-item">
-            <div class="catalog-additional-goods-item_info-wrapper">
-            <a class="catalog-additional-goods-item__title-link" aria-label="Перейти на страницу с описанием товара" href="#">
-            <h3 class="catalog-additional-goods-item__title">Витамины</h3>
-          </a>
-            <dl class="catalog-additional-goods-item__details">
-              <dt class="catalog-additional-goods-item-detail__title">
-                1 упаковка (30 г)
-              </dt>
-              <dd class="catalog-additional-goods-item-detail__value">
-                300 Р.
-              </dd>
-            </dl>
-          </div>
-          <div class="order-button_wrapper">
-            <a
-              class="button order-button"
-              aria-label="Добавить упаковку витаминов объемом 30 граммов в корзину и перейти на страницу оформления заказа"
-              href="#"
-              >Заказать</a
-            >
-          </div>
-          </li>
-        </ul>
-      </section>
-      <section class="promo">
-        <h2 class="visually-hidden">Промо-акция от Cat Energy</h2>
-        <div class="promo-text_wrapper">
-          <p class="promo-text">
-            Закажите все <br> и получите чехол для <br> кота в подарок!
-          </p>
-        </div>
-      </section>
-    </div>
+        </section>
+      </div>
     </main>
     <footer class="page-footer">
       <section class="contacts container">
@@ -482,15 +630,7 @@
             <span>Санкт-Петербург</span>
           </address>
         </div>
-       <!--<div class="contacts__map-wrapper">
-          <iframe
-            class="contacts__map"
-            width="320"
-            height="362"
-            title="Офис компании по адресу г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036252949038!2d30.32086407971034!3d59.93871916914388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1613473099723!5m2!1sru!2sru"
-          ></iframe>
-        </div>-->
+        <div id="map" class="map"></div>
       </section>
       <section class="page-footer-contacts-links container">
         <a class="page-footer-contacts-links__logo" href="index.html">
@@ -500,8 +640,7 @@
             height="24"
             aria-label="логотип Кэт энерджи"
           >
-          <use xlink:href="img/sprite.svg#footer-logo-title"></use>
-
+            <use xlink:href="img/sprite.svg#footer-logo-title"></use>
           </svg>
         </a>
         <h2 class="visually-hidden">Мы в сосцетях:</h2>
@@ -509,39 +648,38 @@
           <li class="socials-list__item">
             <a class="social-link" href="#" aria-label="ВКонтакте">
               <svg
-              class="social-link__icon social-link__icon-vk"
-              width="23"
-              height="16"
-              fill="#666666"
-            >
-            <use xlink:href="img/sprite.svg#vk-icon"></use>
+                class="social-link__icon social-link__icon-vk"
+                width="23"
+                height="16"
+                fill="#666666"
+              >
+                <use xlink:href="img/sprite.svg#vk-icon"></use>
               </svg>
             </a>
           </li>
           <li class="socials-list__item">
             <a class="social-link" href="#" aria-label="Инстаграм">
               <svg
-              class="social-link__icon social-link__icon-instagram"
-              width="16"
-              height="16"
-              fill="#666666"
-            >
-            <use xlink:href="img/sprite.svg#instagram-icon"></use>
-
-            </svg>
+                class="social-link__icon social-link__icon-instagram"
+                width="16"
+                height="16"
+                fill="#666666"
+              >
+                <use xlink:href="img/sprite.svg#instagram-icon"></use>
+              </svg>
             </a>
           </li>
           <li class="socials-list__item">
             <a class="social-link" href="#" aria-label="Фэйсбук">
               <svg
-              class="social-link__icon social-link__icon-facebook"
-              width="13"
-              height="20"
-              fill="none"
-            >
-            <use xlink:href="img/sprite.svg#facebook-icon"></use>
-
-            </svg>
+                class="social-link__icon social-link__icon-facebook"
+                width="13"
+                height="20"
+                fill="none"
+                stroke="#666666"
+              >
+                <use xlink:href="img/sprite.svg#facebook-icon"></use>
+              </svg>
             </a>
           </li>
         </ul>
@@ -555,18 +693,18 @@
             >HTML Academy
           </a>
           <a class="copyright__link-logo">
-            <svg
-            class="copyright__logo"
-            width="27"
-            height="34"
-            fill="#666666"
-          >
-            <use xlink:href="img/sprite.svg#copyright-logo-icon"></use>
+            <svg class="copyright__logo" width="27" height="34" fill="#666666">
+              <use xlink:href="img/sprite.svg#copyright-logo-icon"></use>
             </svg>
           </a>
         </div>
       </section>
     </footer>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJt-9XbbAnWMMpHyuje1ed8dOrY4mtmdI&callback=initMap"
+    ></script>
     <script src="js/index.js"></script>
   </body>
 </html>

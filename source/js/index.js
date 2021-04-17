@@ -13,7 +13,7 @@ var navMain = document.querySelector('.main-nav');
     }
   });
 
-  function initMap() {
+ /* function initMap() {
     var coordinates = {lat: 59.93879709707477, lng: 30.323068855958752},
 
  map = new google.maps.Map(document.getElementById('map'), {
@@ -26,12 +26,35 @@ icon: "../img/map-pin.svg"
  });
 }
 
+initMap ()*/
+
 /*function initMap() {
   var myLatLng = {at: 59.93879709707477, lng: 30.323068855958752};
   var map = new
-  google.maps.Map(document.getElementById("map"). {
+  google.maps.Map(document.getElementById("map") {
     map: map,
     position: myLatLng,
     zoom: 4
   });
 }*/
+
+
+function initMap() {
+var pos = {lat: 59.93879709707477, lng: 30.323068855958752};
+var opt = {
+center: pos,
+zoom: 25,
+};
+
+var myMap = new google.maps.Map(document.getElementById('map'), opt);
+
+
+var marker = new google.maps.Marker({
+position: pos,
+map: myMap,
+icon: "../img/map-pin.svg"
+});
+}
+
+
+
