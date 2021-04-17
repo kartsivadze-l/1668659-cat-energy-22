@@ -10,9 +10,10 @@
   }
 
   @media (min-width: @tablet-width) {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 50px;
+    display: grid;
+    grid-template-columns: min-content 1fr 1fr;
+    margin-top: 52px;
+    margin-left: 30px;
   }
 
   @media (min-width: @desktop-width) {
@@ -21,7 +22,8 @@
     grid-template-areas:
       "one two"
       "three three";
-      margin-bottom: -100px;
+    margin-bottom: -100px;
+    margin-left: 0;
   }
 }
 
@@ -52,19 +54,21 @@
 .result_cost-wrapper {
   @media (max-width: @mobile-width-only) {
     grid-area: three;
-    padding-top: 26px;
+    padding-top: 33px;
   }
 
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: column;
-    padding-top: 10px;
+    padding-top: 0;
+    margin-right: 31px;
+    margin-top: 11px;
   }
 
   @media (min-width: @desktop-width) {
     grid-area: three;
     flex-direction: row;
-    padding-top: 59px;
+    margin-top: 59px;
   }
 }
 
@@ -124,7 +128,7 @@
   display: inline-block;
   position: absolute;
   top: 50px;
-  left: 20px;
+  left: 15px;
   padding-left: 18px;
   padding-right: 18px;
   margin: 0;
@@ -135,8 +139,10 @@
     font-size: 14px;
     line-height: 14px;
     background-color: white;
-    top: 55px;
-    left: 35px;
+    top: 63px;
+    left: 24px;
+    padding-left: 8px;
+    padding-right: 8px;
   }
 
   @media (min-width: @desktop-width) {
@@ -149,7 +155,6 @@
 }
 
 .result__title-weight br {
-
   @media (min-width: @tablet-width) {
     display: none;
   }
@@ -172,10 +177,10 @@
   white-space: nowrap;
 
   @media (min-width: @tablet-width) {
-    padding-left: 30px;
-    padding-right: 30px;
     font-size: 30px;
     line-height: 37px;
+    padding-left: 28px;
+    padding-right: 29px;
   }
 }
 
@@ -201,6 +206,10 @@
     top: 55px;
     left: 30px;
     white-space: nowrap;
+    top: 63px;
+    left: 7px;
+    padding-left: 8px;
+    padding-right: 8px;
   }
 
   @media (min-width: @desktop-width) {
@@ -213,7 +222,6 @@
 }
 
 .result__title-time br {
-
   @media (min-width: @tablet-width) {
     display: none;
   }
@@ -227,16 +235,18 @@
   line-height: 20px;
   display: inline;
   text-align: right;
-  margin-left: 50px;
-  margin-right: 5px;
+  margin-left: 47px;
+  margin-right: 0;
 
   @media (min-width: @tablet-width) {
     text-align: right;
     margin: 0;
+    margin-bottom: 10px;
     font-size: 20px;
   }
 
   @media (min-width: @desktop-width) {
+    margin-bottom: 0;
     margin-right: 64px;
   }
 }

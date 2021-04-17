@@ -4,11 +4,17 @@
   @media (max-width: @mobile-width-only) {
     justify-content: space-between;
     padding-top: 22px;
+    border-top: 1px solid #d9d9d9;
   }
 
   @media (min-width: @tablet-width) {
    flex-direction: row;
+   margin-top: 10px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 7px;
+   }
 }
 
 .copyright__link {
@@ -26,6 +32,20 @@
   @media (max-width: @mobile-width-only) {
     padding-top: 6px;
   }
+
+  @media (min-width: @tablet-width) {
+    margin-top: 8px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 10px;
+  }
+}
+
+.copyright__logo {
+  @media (min-width: @desktop-width) {
+    margin-top: 1px;
+  }
 }
 
  .copyright__logo:hover {
@@ -38,4 +58,8 @@
 
 .copyright a:not(:last-child) {
 margin-right: 22px;
+}
+
+.copyright__link-logo {
+  margin-top: 2px;
 }

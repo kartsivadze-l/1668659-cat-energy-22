@@ -13,37 +13,11 @@ var navMain = document.querySelector('.main-nav');
     }
   });
 
- /* function initMap() {
-    var coordinates = {lat: 59.93879709707477, lng: 30.323068855958752},
-
- map = new google.maps.Map(document.getElementById('map'), {
-  center: coordinates
- }),
-marker = new google.maps.Marker({
-position: coordinates,
-map: map,
-icon: "../img/map-pin.svg"
- });
-}
-
-initMap ()*/
-
-/*function initMap() {
-  var myLatLng = {at: 59.93879709707477, lng: 30.323068855958752};
-  var map = new
-  google.maps.Map(document.getElementById("map") {
-    map: map,
-    position: myLatLng,
-    zoom: 4
-  });
-}*/
-
-
 function initMap() {
 var pos = {lat: 59.93879709707477, lng: 30.323068855958752};
 var opt = {
 center: pos,
-zoom: 25,
+zoom: 17,
 };
 
 var myMap = new google.maps.Map(document.getElementById('map'), opt);

@@ -9,11 +9,11 @@
 }
 
 @media (min-width: @tablet-width) {
-  .social-link:first-of-type {
+  .socials-list__item:first-child .social-link {
     margin-right: 27px;
   }
 
-  .social-link:nth-of-type(2) {
+  .socials-list__item:not(:last-child):not(:first-child) .social-link {
     margin-right: 21px;
   }
 }
