@@ -1,8 +1,13 @@
 .form-field-comment {
-  padding-top: 24px;
-  position: relative;
-  border-top: 2px solid #68b538;
-  margin-bottom: 40px;
+  margin-bottom: 22px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 41px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: -15px;
+  }
 }
 
 .form-field-comment__label {
@@ -12,13 +17,49 @@
   font-size: 24px;
   line-height: 26px;
   margin-left: 20px;
-  position: absolute;
-  top: -17px;
-  left: -20px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-right: 23px;
   background-color: white;
-  z-index: 2;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    padding-left: 39px;
+    padding-right: 42px;
+    margin-left: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: -40px;
+  }
+}
+
+.form-field-comment__label::before {
+
+  @media (min-width: @tablet-width) {
+  content: "";
+  height: 2px;
+  width: 100vw;
+  background: #68b738;
+  z-index: -1;
+  position: absolute;
+  top: 60%;
+  right: 0;
+}
+}
+
+.form-field-comment__label::after {
+  content: "";
+  height: 2px;
+  width: 100vw;
+  background: #68b738;
+  z-index: -1;
+  position: absolute;
+  top: 52%;
+
+  @media (min-width: @tablet-width) {
+    top: 60%;
+  }
 }
 
 .form-field-comment__input {
@@ -28,18 +69,22 @@
   margin-left: 20px;
   box-sizing: border-box;
   border-color: #e7e7e7;
-  padding-top: 10px;
+  padding-top: 7px;
   width: 280px;
   height: 150px;
 
   @media (min-width: @tablet-width) {
     width: 631px;
     height: 174px;
+    margin-left: 70px;
+    margin-top: 75px;
+    padding-top: 8px;
   }
 
   @media (min-width: @desktop-width) {
     width: 1220px;
     height: 174px;
+    margin-left: 0;
   }
 }
 
@@ -50,6 +95,12 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
-  padding-left: 15px;
+  padding-left: 13px;
   color: #444444;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 15px;
+  }
 }

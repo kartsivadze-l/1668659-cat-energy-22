@@ -3,11 +3,13 @@
 
   @media (min-width: @tablet-width) {
     grid-template-columns: 1fr 1fr;
-    grid-gap: 61px;
+    grid-gap: 10px;
+    margin-left: 51px;
   }
 
   @media (min-width: @desktop-width) {
     grid-gap: 81px;
+    margin-left: 0;
   }
 }
 
@@ -20,17 +22,32 @@
 
   @media (max-width: @mobile-width-only) {
     text-align: center;
+    margin-top: 20px;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
   }
 }
 
 .submit__button_wrapper {
   padding-left: 20px;
   padding-right: 20px;
+
+  @media (min-width: @desktop-width) {
+    padding-right: 0;
+    padding-left: 110px;
+  }
 }
 
 .submit__button {
   width: 100%;
   border: none;
+
+  @media (max-width: @mobile-width-only) {
+    padding-top: 11px;
+    font-size: 16px;
+  }
 
   @media (min-width: @tablet-width) {
     width: 282px;

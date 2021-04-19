@@ -6,14 +6,18 @@
   padding: none;
 
   @media (min-width: @tablet-width) {
-    flex-direction: row;
-    justify-content: space-between;
-    padding-top: 26px;
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    column-gap: 78px;
+    padding-top: 25px;
+    padding-left: 30px;
+    padding-right: 29px;
   }
 
   @media (min-width: @desktop-width) {
     padding: 0;
     margin: 0;
+    column-gap: 520px;
 }
 }
 
