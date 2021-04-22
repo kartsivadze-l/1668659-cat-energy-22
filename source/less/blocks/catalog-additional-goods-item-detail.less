@@ -5,6 +5,17 @@
   font-size: 14px;
   line-height: 14px;
   display: inline;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    margin-right: 10px;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: left;
+    margin-right: 70px;
+  }
 }
 
 .catalog-additional-goods-item-detail__value {
@@ -14,4 +25,13 @@
   font-size: 14px;
   line-height: 14px;
   display: inline;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.catalog-additional-goods-item-detail__title-water {
+  margin-right: 18px;
 }

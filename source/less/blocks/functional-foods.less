@@ -85,6 +85,7 @@
       content: "";
       background-image: url("../img/bg-cat-mobile@1x.png");
       background-repeat: no-repeat;
+      background-color: #cdbeb6;
       opacity: 0.15;
       top: 0;
       left: 0;
@@ -93,6 +94,11 @@
       width: 320px;
       height: 302px;
       margin: 0 auto;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/bg-cat-mobile@2x.png");
+        background-size: 320px 302px;
+      }
     }
   }
 }

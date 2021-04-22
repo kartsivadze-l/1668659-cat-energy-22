@@ -29,6 +29,3 @@ map: myMap,
 icon: "../img/map-pin.svg"
 });
 }
-
-
-

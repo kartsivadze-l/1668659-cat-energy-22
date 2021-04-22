@@ -1,17 +1,19 @@
-.page-main-index {
+.page-main-index::after {
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    content: "";
+    background: url("../img/bg-cat-desktop@1x.png") no-repeat;
+    background-color: #7abc4e;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 694px;
+    background-size: cover;
+    z-index: -1;
 
-@media (min-width: @desktop-width) {
-    &::after {
-      position: absolute;
-      content: "";
-      background: url("../img/bg-cat-desktop@1x.png") no-repeat;
-      background-repeat: no-repeat;
-      top: 0;
-      right: 0;
-      width: 50%;
-      height: 694px;
-      background-size: cover;
-      z-index: -1;
+    @media (min-resolution: 2dppx) {
+      background: url("../img/bg-cat-desktop@2x.png") no-repeat;
+      background-size: 100% auto;
     }
   }
 }
