@@ -1,6 +1,17 @@
 .functional-foods {
   box-sizing: border-box;
   position: relative;
+
+  @media (max-width: @mobile-width-only) {
+    background-image: url("../img/bg-cat-mobile@1x.png");
+    background-color: #7abc4f;
+    background-repeat: no-repeat;
+    background-size: 100% 302px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg-cat-mobile@2x.png");
+    }
+  }
 }
 
 .functional-foods__title {
@@ -61,10 +72,11 @@
 .functional-foods_wrapper {
   @media (max-width: @mobile-width-only) {
     height: 275px;
-    background-size: 302px;
+    /*background-image: url("../img/bg-cat-mobile@1x.png");
+    background-size: 100% 302px;
     background-color: rgba(104, 183, 56);
     background-repeat: no-repeat;
-    position: relative;
+    position: relative;*/
     padding-top: 27px;
     margin-bottom: 200px;
   }
@@ -79,7 +91,7 @@
     padding-left: 82px;
   }
 
-  &::before {
+  /*&::before {
     @media (max-width: @mobile-width-only) {
       position: absolute;
       content: "";
@@ -91,16 +103,16 @@
       left: 0;
       bottom: 0;
       right: 0;
-      width: 320px;
+      width: 100vw;
       height: 302px;
       margin: 0 auto;
 
-      @media (min-resolution: 2dppx) {
+      /*@media (min-resolution: 2dppx) {
         background-image: url("../img/bg-cat-mobile@2x.png");
-        background-size: 320px 302px;
+        background-size: cover 302px;
       }
     }
-  }
+  }*/
 }
 
 .functional-foods__button_wrapper {
