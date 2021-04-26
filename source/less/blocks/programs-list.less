@@ -31,7 +31,6 @@
 }
 
 .programs-list__item:not(:last-child) {
-
   @media (min-width: @tablet-width) {
     margin-bottom: 29px;
   }
@@ -170,6 +169,7 @@
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 50px;
+    width: 227px;
   }
 
   @media (min-width: @desktop-width) {
@@ -179,15 +179,23 @@
   }
 }
 
-@media (max-width: @mobile-width-only) {
-  .programs-list__description br {
-    display: none;
+.programs-list__item:first-child .programs-list__description {
+  @media (min-width: @tablet-width) {
+    width: 377px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 467px;
   }
 }
 
-@media (min-width: @desktop-width) {
-  .programs-list__description br {
-    display: none;
+.programs-list__item:nth-child(2) .programs-list__description {
+  @media (min-width: @tablet-width) {
+    width: 342px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 457px;
   }
 }
 
@@ -215,7 +223,7 @@
   opacity: 0.3;
 }
 
-.programs-list__link--icon-slim:after {
+.programs-list__link--icon-slim::after {
   position: absolute;
   content: "";
   width: 24px;
@@ -236,29 +244,38 @@
   }
 }
 
-.programs-list__link--icon-slim:active:after {
+.programs-list__link--icon-slim:active::after {
   opacity: 0.3;
 }
 
-.programs-list__link--icon-slim:hover:after {
+.programs-list__link--icon-slim:hover::after {
   position: absolute;
   content: "";
   width: 32px;
   height: 10px;
   background-image: url("../img/arrow-hover.svg");
   background-repeat: no-repeat;
-  top: 5px;
-  left: 100px;
+  top: 21px;
+  right: -39px;
+
+  @media (min-width: @tablet-width) {
+    top: 9px;
+    left: 132px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 10px;
+    left: 136px;
+  }
 }
 
 .programs-list__link--icon-pro {
-
   @media (min-width: @mobile-width-only) {
-  padding-top: 0;
-}
+    padding-top: 0;
+  }
 }
 
-.programs-list__link--icon-pro:after {
+.programs-list__link--icon-pro::after {
   position: absolute;
   content: "";
   width: 24px;
@@ -274,17 +291,22 @@
   }
 }
 
-.programs-list__link--icon-pro:active:after {
+.programs-list__link--icon-pro:active::after {
   opacity: 0.3;
 }
 
-.programs-list__link--icon-pro:hover:after {
+.programs-list__link--icon-pro:hover::after {
   position: absolute;
   content: "";
   width: 32px;
   height: 10px;
   background-image: url("../img/arrow-hover.svg");
   background-repeat: no-repeat;
-  top: 5px;
-  left: 100px;
+  top: 21px;
+  left: 99px;
+
+  @media (min-width: @tablet-width) {
+    top: 9px;
+    left: 128px;
+  }
 }

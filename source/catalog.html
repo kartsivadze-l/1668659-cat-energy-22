@@ -2,13 +2,13 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="icon" href="favicon.ico" />
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="img/favicons/180.png" />
     <link rel="manifest" href="favicons.webmanifest" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body class="page__body">
     <div class="container">
@@ -63,7 +63,7 @@
                   href="#"
                 >
                   <h3 class="catalog-item__name">
-                    Cat Energy <br />
+                    Cat Energy<br />
                     PRO <span>500 г</span>
                   </h3>
                 </a>
@@ -88,6 +88,21 @@
                 aria-label="Перейти на страницу с описанием товара"
               >
                 <picture>
+                  <source
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/catalog-item1-desktop@1x.webp,
+                      img/catalog-item1-desktop@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="
+                      img/catalog-item1-mobile@1x.webp,
+                      img/catalog-item1-mobile@2x.webp 2x
+                    "
+                  />
                   <source
                     media="(min-width: 768px)"
                     srcset="
@@ -122,7 +137,7 @@
                   aria-label="Перейти на страницу с описанием товара"
                 >
                   <h3 class="catalog-item__name">
-                    Cat Energy <br />
+                    Cat Energy<br />
                     PRO <span>1000 г</span>
                   </h3>
                 </a>
@@ -148,6 +163,22 @@
               >
                 <picture>
                   <source
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/catalog-item2-desktop@1x.webp,
+                      img/catalog-item2-desktop@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="
+                      img/catalog-item2-mobile@1x.webp,
+                      img/catalog-item2-mobile@2x.webp 2x
+                    "
+                  />
+
+                  <source
                     media="(min-width: 768px)"
                     srcset="
                       img/catalog-item2-desktop@1x.png,
@@ -155,7 +186,7 @@
                     "
                   />
                   <img
-                    class="catalog-item__image"
+                    class="catalog-item__image catalog-item__image_pro1000chicken"
                     src="img/catalog-item2-mobile@1x.png"
                     srcset="img/catalog-item2-mobile@2x.png 2x"
                     alt="Корм Cat Energy Pro с курицей объемом 1000 граммов"
@@ -181,7 +212,7 @@
                   aria-label="Перейти на страницу с описанием товара"
                 >
                   <h3 class="catalog-item__name">
-                    Cat Energy <br />
+                    Cat Energy<br />
                     PRO <span>500 г</span>
                   </h3>
                 </a>
@@ -207,6 +238,21 @@
               >
                 <picture>
                   <source
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/catalog-item3-desktop@1x.webp,
+                      img/catalog-item3-desktop@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="
+                      img/catalog-item3-mobile@1x.webp,
+                      img/catalog-item3-mobile@2x.webp 2x
+                    "
+                  />
+                  <source
                     media="(min-width: 768px)"
                     srcset="
                       img/catalog-item3-desktop@1x.png,
@@ -214,7 +260,7 @@
                     "
                   />
                   <img
-                    class="catalog-item__image"
+                    class="catalog-item__image catalog-item__image-pro500fish"
                     src="img/catalog-item3-mobile@1x.png"
                     srcset="img/catalog-item3-mobile@2x.png 2x"
                     alt="Корм Cat Energy Pro с рыбой объемом 500 граммов"
@@ -240,7 +286,7 @@
                   aria-label="Перейти на страницу с описанием товара"
                 >
                   <h3 class="catalog-item__name">
-                    Cat Energy <br />
+                    Cat Energy<br />
                     PRO <span>1000 г</span>
                   </h3>
                 </a>
@@ -266,6 +312,21 @@
               >
                 <picture>
                   <source
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/catalog-item4-desktop@1x.webp,
+                      img/catalog-item4-desktop@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="
+                      img/catalog-item4-mobile@1x.webp,
+                      img/catalog-item4-mobile@2x.webp 2x
+                    "
+                  />
+                  <source
                     media="(min-width: 768px)"
                     srcset="
                       img/catalog-item4-desktop@1x.png,
@@ -273,7 +334,7 @@
                     "
                   />
                   <img
-                    class="catalog-item__image"
+                    class="catalog-item__image catalog-item__image_pro1000fish"
                     src="img/catalog-item4-mobile@1x.png"
                     srcset="img/catalog-item4-mobile@2x.png 2x"
                     alt="Корм Cat Energy Pro с рыбой объемом 1000 граммов"
@@ -299,7 +360,7 @@
                   aria-label="Перейти на страницу с описанием товара"
                 >
                   <h3 class="catalog-item__name">
-                    Cat Energy <br />
+                    Cat Energy<br />
                     Slim <span>500 г</span>
                   </h3>
                 </a>
@@ -325,6 +386,21 @@
               >
                 <picture>
                   <source
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/catalog-item5-desktop@1x.webp,
+                      img/catalog-item5-desktop@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="
+                      img/catalog-item5-mobile@1x.webp,
+                      img/catalog-item5-mobile@2x.webp 2x
+                    "
+                  />
+                  <source
                     media="(min-width: 768px)"
                     srcset="
                       img/catalog-item5-desktop@1x.png,
@@ -332,7 +408,7 @@
                     "
                   />
                   <img
-                    class="catalog-item__image"
+                    class="catalog-item__image catalog-item__image_slim500buckwheat"
                     src="img/catalog-item5-mobile@1x.png"
                     srcset="img/catalog-item5-mobile@2x.png 2x"
                     alt="Корм Cat Energy Slim с гречкой объемом 500 граммов"
@@ -358,7 +434,7 @@
                   aria-label="Перейти на страницу с описанием товара"
                 >
                   <h3 class="catalog-item__name">
-                    Cat Energy <br />
+                    Cat Energy<br />
                     Slim <span>1000 г</span>
                   </h3>
                 </a>
@@ -384,6 +460,21 @@
               >
                 <picture>
                   <source
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/catalog-item6-desktop@1x.webp,
+                      img/catalog-item6-desktop@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="
+                      img/catalog-item6-mobile@1x.webp,
+                      img/catalog-item6-mobile@2x.webp 2x
+                    "
+                  />
+                  <source
                     media="(min-width: 768px)"
                     srcset="
                       img/catalog-item6-desktop@1x.png,
@@ -391,7 +482,7 @@
                     "
                   />
                   <img
-                    class="catalog-item__image"
+                    class="catalog-item__image catalog-item__image_slim1000buckwheat"
                     src="img/catalog-item6-mobile@1x.png"
                     srcset="img/catalog-item6-mobile@2x.png 2x"
                     alt="Корм Cat Energy Slim с гречкой объемом 1000 граммов"
@@ -417,7 +508,7 @@
                   aria-label="Перейти на страницу с описанием товара"
                 >
                   <h3 class="catalog-item__name">
-                    Cat Energy <br />
+                    Cat Energy<br />
                     Slim <span>500 г</span>
                   </h3>
                 </a>
@@ -443,6 +534,21 @@
               >
                 <picture>
                   <source
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/catalog-item7-desktop@1x.webp,
+                      img/catalog-item7-desktop@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="
+                      img/catalog-item7-mobile@1x.webp,
+                      img/catalog-item7-mobile@2x.webp 2x
+                    "
+                  />
+                  <source
                     media="(min-width: 768px)"
                     srcset="
                       img/catalog-item7-desktop@1x.png,
@@ -450,7 +556,7 @@
                     "
                   />
                   <img
-                    class="catalog-item__image"
+                    class="catalog-item__image catalog-item__image_slim500rice"
                     src="img/catalog-item7-mobile@1x.png"
                     srcset="img/catalog-item7-mobile@2x.png 2x"
                     alt="Корм Cat Energy Slim с рисом объемом 500 граммов"
@@ -469,19 +575,20 @@
           </li>
           <li class="show-all-goods">
             <p class="show-all-goods__text">
-              Показать еще 100500 товаров
-              <span class="show-all-goods__note"
-                >На самом деле вкусов гораздо больше!</span
-              >
+              Показать еще<br />
+              100500 товаров
+              <span class="show-all-goods__note">
+                На самом деле вкусов<br />
+                гораздо больше!
+              </span>
             </p>
             <div class="show-all-goods__button_wrapper">
               <a
                 class="button show-all-goods__button"
                 href="#"
                 aria-label="Просмотреть все новые товары"
+                >Показать все</a
               >
-                Показать все
-              </a>
             </div>
           </li>
         </ul>
@@ -498,11 +605,10 @@
                   class="catalog-additional-goods-item__title-link"
                   aria-label="Перейти на страницу с описанием товара"
                   href="#"
-                >
-                  <h3 class="catalog-additional-goods-item__title">
+                  ><h3 class="catalog-additional-goods-item__title">
                     Сахарозаменитель
-                  </h3>
-                </a>
+                  </h3></a
+                >
                 <dl class="catalog-additional-goods-item__details">
                   <dt class="catalog-additional-goods-item-detail__title">
                     1 упаковка (100 г)
@@ -527,13 +633,14 @@
                   class="catalog-additional-goods-item__title-link"
                   aria-label="Перейти на страницу с описанием товара"
                   href="#"
-                >
-                  <h3 class="catalog-additional-goods-item__title">
+                  ><h3 class="catalog-additional-goods-item__title">
                     Питьевая вода
-                  </h3>
-                </a>
+                  </h3></a
+                >
                 <dl class="catalog-additional-goods-item__details">
-                  <dt class="catalog-additional-goods-item-detail__title">
+                  <dt
+                    class="catalog-additional-goods-item-detail__title catalog-additional-goods-item-detail__title-water"
+                  >
                     5 литров
                   </dt>
                   <dd class="catalog-additional-goods-item-detail__value">
@@ -556,9 +663,10 @@
                   class="catalog-additional-goods-item__title-link"
                   aria-label="Перейти на страницу с описанием товара"
                   href="#"
+                  ><h3 class="catalog-additional-goods-item__title">
+                    Молоко
+                  </h3></a
                 >
-                  <h3 class="catalog-additional-goods-item__title">Молоко</h3>
-                </a>
                 <dl class="catalog-additional-goods-item__details">
                   <dt class="catalog-additional-goods-item-detail__title">
                     1 литр
@@ -583,9 +691,10 @@
                   class="catalog-additional-goods-item__title-link"
                   aria-label="Перейти на страницу с описанием товара"
                   href="#"
+                  ><h3 class="catalog-additional-goods-item__title">
+                    Витамины
+                  </h3></a
                 >
-                  <h3 class="catalog-additional-goods-item__title">Витамины</h3>
-                </a>
                 <dl class="catalog-additional-goods-item__details">
                   <dt class="catalog-additional-goods-item-detail__title">
                     1 упаковка (30 г)
@@ -610,8 +719,8 @@
           <h2 class="visually-hidden">Промо-акция от Cat Energy</h2>
           <div class="promo-text_wrapper">
             <p class="promo-text">
-              Закажите все <br />
-              и получите чехол для <br />
+              Закажите все<br />
+              и получите чехол для<br />
               кота в подарок!
             </p>
           </div>
@@ -623,90 +732,96 @@
         <h2 class="visually-hidden">Контакты</h2>
         <div class="contacts__text container contacts__text_grey-theme">
           <p class="contacts__invitation">
-            Приглашаем к сотрудничеству дилеров!
+            Приглашаем<br />
+            к сотрудничеству<br />
+            дилеров!
           </p>
           <address class="contacts__address">
-            ул. Большая Конюшенная, д. 19/8
-            <span>Санкт-Петербург</span>
+            ул. Большая<br />
+            Конюшенная, д. 19/8 <span>Санкт-Петербург</span>
           </address>
         </div>
         <div id="map" class="map"></div>
       </section>
       <div class="page-footer-contacts-links_wrapper">
-      <section class="page-footer-contacts-links container">
-        <a class="page-footer-contacts-links__logo" href="index.html">
-          <svg
-            class="page-footer-contacts-links__logo-title"
-            width="128"
-            height="24"
-            aria-label="логотип Кэт энерджи"
-          >
-            <use xlink:href="img/sprite.svg#footer-logo-title"></use>
-          </svg>
-        </a>
-        <h2 class="visually-hidden">Мы в сосцетях:</h2>
-        <ul class="socials-list">
-          <li class="socials-list__item">
-            <a class="social-link" href="#" aria-label="ВКонтакте">
-              <svg
-                class="social-link__icon social-link__icon-vk"
-                width="23"
-                height="16"
-                fill="#666666"
-              >
-                <use xlink:href="img/sprite.svg#vk-icon"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="socials-list__item">
-            <a class="social-link" href="#" aria-label="Инстаграм">
-              <svg
-                class="social-link__icon social-link__icon-instagram"
-                width="16"
-                height="16"
-                fill="#666666"
-              >
-                <use xlink:href="img/sprite.svg#instagram-icon"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="socials-list__item">
-            <a class="social-link" href="#" aria-label="Фэйсбук">
-              <svg
-                class="social-link__icon social-link__icon-facebook"
-                width="13"
-                height="20"
-                fill="none"
-                stroke="#666666"
-              >
-                <use xlink:href="img/sprite.svg#facebook-icon"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-
-        <div class="page-footer__copyright copyright">
-          <h2 class="visually-hidden">Правообладатель</h2>
-          <a
-            class="copyright__link"
-            href="https://htmlacademy.ru/intensive/adaptive"
-            aria-label="Перейти на страницу интенсива Профессиональный HTML и CSS, уровень 2 компании HTML Academy"
-            >HTML Academy
-          </a>
-          <a class="copyright__link-logo">
-            <svg class="copyright__logo" width="27" height="34" fill="#666666">
-              <use xlink:href="img/sprite.svg#copyright-logo-icon"></use>
+        <section class="page-footer-contacts-links container">
+          <a class="page-footer-contacts-links__logo" href="index.html">
+            <svg
+              class="page-footer-contacts-links__logo-title"
+              width="128"
+              height="24"
+              aria-label="логотип Кэт энерджи"
+            >
+              <use xlink:href="img/sprite.svg#footer-logo-title"></use>
             </svg>
           </a>
-        </div>
-      </section>
+          <h2 class="visually-hidden">Мы в сосцетях:</h2>
+          <ul class="socials-list">
+            <li class="socials-list__item">
+              <a class="social-link" href="#" aria-label="ВКонтакте">
+                <svg
+                  class="social-link__icon social-link__icon-vk"
+                  width="23"
+                  height="16"
+                  fill="#666666"
+                >
+                  <use xlink:href="img/sprite.svg#vk-icon"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials-list__item">
+              <a class="social-link" href="#" aria-label="Инстаграм">
+                <svg
+                  class="social-link__icon social-link__icon-instagram"
+                  width="16"
+                  height="16"
+                  fill="#666666"
+                >
+                  <use xlink:href="img/sprite.svg#instagram-icon"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials-list__item">
+              <a class="social-link" href="#" aria-label="Фэйсбук">
+                <svg
+                  class="social-link__icon social-link__icon-facebook"
+                  width="13"
+                  height="20"
+                  fill="none"
+                  stroke="#666666"
+                >
+                  <use xlink:href="img/sprite.svg#facebook-icon"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <div class="page-footer__copyright copyright">
+            <h2 class="visually-hidden">Правообладатель</h2>
+            <a
+              class="copyright__link"
+              href="https://htmlacademy.ru/intensive/adaptive"
+              aria-label="Перейти на страницу интенсива Профессиональный HTML и CSS, уровень 2 компании HTML Academy"
+              >HTML Academy
+            </a>
+            <a class="copyright__link-logo">
+              <svg
+                class="copyright__logo"
+                width="27"
+                height="34"
+                fill="#666666"
+              >
+                <use xlink:href="img/sprite.svg#copyright-logo-icon"></use>
+              </svg>
+            </a>
+          </div>
+        </section>
       </div>
     </footer>
     <script
       async
-      defer
+      defer="defer"
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJt-9XbbAnWMMpHyuje1ed8dOrY4mtmdI&callback=initMap"
     ></script>
-    <script src="js/index.js"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>

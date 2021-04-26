@@ -1,18 +1,17 @@
 .show-all-goods {
-  padding: 78px 20px 25px 21px;
+  padding: 62px 20px 25px 21px;
   background-color: white;
   box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
     border: 2px solid #f2f2f2;
-    width: 324px;
-    height: 429px;
+    padding-top: 140px;
   }
 
-  @media (min-width: @desktop-width) {
+  /*@media (min-width: @desktop-width) {
     width: 245px;
     height: 430px;
-  }
+  }*/
 }
 
 .show-all-goods__text {
@@ -26,6 +25,58 @@
   color: #111111;
   display: block;
   margin-bottom: 8px;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+
+.show-all-goods__text br {
+  @media (max-width: @mobile-width-only) {
+    display: none;
+  }
+}
+
+.show-all-goods__text::before {
+  content: "";
+  height: 2px;
+  background-color: #d3d3d3;
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+
+  @media (max-width: @mobile-width-only) {
+    width: 30px;
+    top: -39px;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 60px;
+    top: -80px;
+  }
+}
+
+.show-all-goods__text::after {
+  content: "";
+  width: 2px;
+  background-color: #d3d3d3;
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+
+  @media (max-width: @mobile-width-only) {
+    height: 30px;
+    top: -53px;
+  }
+
+  @media (min-width: @tablet-width) {
+    top: -110px;
+    height: 60px;
+  }
 }
 
 .show-all-goods__note {
@@ -36,13 +87,33 @@
   line-height: 16px;
   color: #444444;
   text-align: center;
+  text-transform: none;
   display: block;
+  margin-top: 8px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 18px;
+    margin-top: 23px;
+  }
+}
+
+.show-all-goods__note br {
+  @media (max-width: @mobile-width-only) {
+    display: none;
+  }
 }
 
 .show-all-goods__button_wrapper {
   padding-left: 20px;
   padding-right: 20px;
   margin-top: 21px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 86px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }
 
 .show-all-goods__button {
@@ -50,9 +121,13 @@
   background-color: #f2f2f2;
   width: 100%;
   border: none;
+  font-size: 16px;
 
   @media (min-width: @tablet-width) {
     width: 249px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
   }
 
   @media (min-width: @desktop-width) {
