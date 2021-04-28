@@ -65,17 +65,25 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: min-content 1fr;
-    column-gap: 14px;
+    column-gap: 16px;
     margin-bottom: 18px;
   }
 }
 
 .form-field-cat_questionnaire-wrapper:nth-of-type(2) {
   column-gap: 18px;
+
+  @media (min-width: @tablet-width) {
+    column-gap: 20px;
+  }
 }
 
 .form-field-cat_questionnaire-wrapper:nth-of-type(3) {
   column-gap: 17px;
+
+  @media (min-width: @tablet-width) {
+    column-gap: 18px;
+  }
 }
 
 .form-field-cat__input {
@@ -103,7 +111,7 @@
 
 .form-field-cat__input-name {
   @media (max-width: @mobile-width-only) {
-    width: 228px;
+    width: 230px;
     height: 45px;
   }
 

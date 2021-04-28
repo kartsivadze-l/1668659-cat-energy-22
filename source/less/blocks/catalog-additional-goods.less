@@ -58,12 +58,14 @@
 }
 
 .catalog-additional-goods__title::before {
-  position: absolute;
-  content: "";
-  height: 2px;
-  width: 100vw;
-  top: 62%;
-  right: 0;
-  background-color: #68b738;
-  z-index: -1;
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 100vw;
+    top: 62%;
+    right: 0;
+    background-color: #68b738;
+    z-index: -1;
+  }
 }
