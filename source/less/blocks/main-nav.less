@@ -37,7 +37,7 @@
     background-color: white;
   }
 
-  .main-nav_closed .main-nav__toggle::before {
+  .main-nav--closed .main-nav__toggle::before {
     content: "";
     position: absolute;
     top: 0;
@@ -48,7 +48,7 @@
     box-shadow: 0 8px 0 0 black, 0 16px 0 black;
   }
 
-  .main-nav_opened .main-nav__toggle::before {
+  .main-nav--opened .main-nav__toggle::before {
     top: 8px;
     left: 0;
     content: "";
@@ -59,7 +59,7 @@
     transform: rotate(45deg);
   }
 
-  .main-nav_opened .main-nav__toggle::after {
+  .main-nav--opened .main-nav__toggle::after {
     top: 8px;
     left: 0;
     content: "";
@@ -71,6 +71,12 @@
   }
 }
 
-/*.main-nav_nojs .main-nav__toggle {
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+
+.main-nav--closed .site-list {
+  @media (max-width: @mobile-width-only) {
     display: none;
-  }*/
+  }
+}

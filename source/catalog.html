@@ -9,10 +9,15 @@
     <link rel="apple-touch-icon" href="img/favicons/180.png" />
     <link rel="manifest" href="favicons.webmanifest" />
     <link rel="stylesheet" href="css/style.min.css" />
-    <link rel="preload" href="fonts/oswaldmedium.woff" as="font" crossorigin>
-    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin>
-    <link rel="preload" href="fonts/oswaldregular.woff" as="font" crossorigin>
-    <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin>
+    <link rel="preload" href="fonts/oswaldmedium.woff" as="font" crossorigin />
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin />
+    <link rel="preload" href="fonts/oswaldregular.woff" as="font" crossorigin />
+    <link
+      rel="preload"
+      href="fonts/oswaldregular.woff2"
+      as="font"
+      crossorigin
+    />
   </head>
   <body class="page__body">
     <div class="container">
@@ -21,7 +26,7 @@
           <a class="page-header__logo" href="index.html">
             <picture>
               <source
-                media="(min-width: 1220px)"
+                media="(min-width: 1440px)"
                 srcset="img/logo-desktop.svg"
               />
               <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" />
@@ -33,7 +38,7 @@
             </picture>
           </a>
         </div>
-        <nav class="main-nav main-nav_closed main-nav_nojs">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
@@ -42,7 +47,7 @@
               <a class="site-list__link" href="index.html">Главная</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link site-list__link_active" href="#"
+              <a class="site-list__link site-list__link--active" href="#"
                 >Каталог продукции</a
               >
             </li>
@@ -59,15 +64,15 @@
         <h2 class="catalog__title">Каталог продукции</h2>
         <ul class="catalog-list">
           <li class="catalog-item">
-            <div class="catalog-item_wrapper">
-              <div class="catalog-item_info-wrapper">
+            <div class="catalog-item__wrapper">
+              <div class="catalog-item__info-wrapper">
                 <a
                   class="catalog-item__name-link"
                   aria-label="Перейти на страницу с описанием товара"
                   href="#"
                 >
                   <h3 class="catalog-item__name">
-                    Cat Energy&nbsp<br />
+                    Cat Energy&nbsp;<br />
                     PRO <span>500 г</span>
                   </h3>
                 </a>
@@ -122,7 +127,7 @@
                   />
                 </picture>
               </a>
-              <div class="catalog-item__order-button_wrapper">
+              <div class="catalog-item__order-button-wrapper">
                 <a
                   class="button catalog-item__order-button"
                   aria-label="Добавить корм Cat Energy Pro с курицей объемом 500 граммов а корзину и перейти на страницу оформления заказа"
@@ -133,15 +138,15 @@
             </div>
           </li>
           <li class="catalog-item">
-            <div class="catalog-item_wrapper">
-              <div class="catalog-item_info-wrapper">
+            <div class="catalog-item__wrapper">
+              <div class="catalog-item__info-wrapper">
                 <a
                   class="catalog-item__name-link"
                   href="#"
                   aria-label="Перейти на страницу с описанием товара"
                 >
                   <h3 class="catalog-item__name">
-                    Cat Energy&nbsp<br />
+                    Cat Energy&nbsp;<br />
                     PRO <span>1000 г</span>
                   </h3>
                 </a>
@@ -190,14 +195,14 @@
                     "
                   />
                   <img
-                    class="catalog-item__image catalog-item__image_pro1000chicken"
+                    class="catalog-item__image catalog-item__image--pro1000chicken"
                     src="img/catalog-item2-mobile@1x.png"
                     srcset="img/catalog-item2-mobile@2x.png 2x"
                     alt="Корм Cat Energy Pro с курицей объемом 1000 граммов"
                   />
                 </picture>
               </a>
-              <div class="catalog-item__order-button_wrapper">
+              <div class="catalog-item__order-button-wrapper">
                 <a
                   class="button catalog-item__order-button"
                   aria-label="Добавить корм Cat Energy Pro с курицей объемом 1000 граммов а корзину и перейти на страницу оформления заказа"
@@ -208,15 +213,15 @@
             </div>
           </li>
           <li class="catalog-item">
-            <div class="catalog-item_wrapper">
-              <div class="catalog-item_info-wrapper">
+            <div class="catalog-item__wrapper">
+              <div class="catalog-item__info-wrapper">
                 <a
                   class="catalog-item__name-link"
                   href="#"
                   aria-label="Перейти на страницу с описанием товара"
                 >
                   <h3 class="catalog-item__name">
-                    Cat Energy&nbsp<br />
+                    Cat Energy&nbsp;<br />
                     PRO <span>500 г</span>
                   </h3>
                 </a>
@@ -264,14 +269,14 @@
                     "
                   />
                   <img
-                    class="catalog-item__image catalog-item__image-pro500fish"
+                    class="catalog-item__image catalog-item__image--pro500fish"
                     src="img/catalog-item3-mobile@1x.png"
                     srcset="img/catalog-item3-mobile@2x.png 2x"
                     alt="Корм Cat Energy Pro с рыбой объемом 500 граммов"
                   />
                 </picture>
               </a>
-              <div class="catalog-item__order-button_wrapper">
+              <div class="catalog-item__order-button-wrapper">
                 <a
                   class="button catalog-item__order-button"
                   aria-label="Добавить корм Cat Energy Pro с рыбой объемом 500 граммов а корзину и перейти на страницу оформления заказа"
@@ -282,15 +287,15 @@
             </div>
           </li>
           <li class="catalog-item">
-            <div class="catalog-item_wrapper">
-              <div class="catalog-item_info-wrapper">
+            <div class="catalog-item__wrapper">
+              <div class="catalog-item__info-wrapper">
                 <a
                   class="catalog-item__name-link"
                   href="#"
                   aria-label="Перейти на страницу с описанием товара"
                 >
                   <h3 class="catalog-item__name">
-                    Cat Energy&nbsp<br />
+                    Cat Energy&nbsp;<br />
                     PRO <span>1000 г</span>
                   </h3>
                 </a>
@@ -338,14 +343,14 @@
                     "
                   />
                   <img
-                    class="catalog-item__image catalog-item__image_pro1000fish"
+                    class="catalog-item__image catalog-item__image--pro1000fish"
                     src="img/catalog-item4-mobile@1x.png"
                     srcset="img/catalog-item4-mobile@2x.png 2x"
                     alt="Корм Cat Energy Pro с рыбой объемом 1000 граммов"
                   />
                 </picture>
               </a>
-              <div class="catalog-item__order-button_wrapper">
+              <div class="catalog-item__order-button-wrapper">
                 <a
                   class="button catalog-item__order-button"
                   aria-label="Добавить корм Cat Energy Pro с рыбой объемом 1000 граммов а корзину и перейти на страницу оформления заказа"
@@ -356,15 +361,15 @@
             </div>
           </li>
           <li class="catalog-item">
-            <div class="catalog-item_wrapper">
-              <div class="catalog-item_info-wrapper">
+            <div class="catalog-item__wrapper">
+              <div class="catalog-item__info-wrapper">
                 <a
                   class="catalog-item__name-link"
                   href="#"
                   aria-label="Перейти на страницу с описанием товара"
                 >
                   <h3 class="catalog-item__name">
-                    Cat Energy&nbsp<br />
+                    Cat Energy&nbsp;<br />
                     Slim <span>500 г</span>
                   </h3>
                 </a>
@@ -412,14 +417,14 @@
                     "
                   />
                   <img
-                    class="catalog-item__image catalog-item__image_slim500buckwheat"
+                    class="catalog-item__image catalog-item__image--slim500buckwheat"
                     src="img/catalog-item5-mobile@1x.png"
                     srcset="img/catalog-item5-mobile@2x.png 2x"
                     alt="Корм Cat Energy Slim с гречкой объемом 500 граммов"
                   />
                 </picture>
               </a>
-              <div class="catalog-item__order-button_wrapper">
+              <div class="catalog-item__order-button-wrapper">
                 <a
                   class="button catalog-item__order-button"
                   aria-label="Добавить корм Cat Energy Slim с гречкой объемом 500 граммов а корзину и перейти на страницу оформления заказа"
@@ -430,15 +435,15 @@
             </div>
           </li>
           <li class="catalog-item">
-            <div class="catalog-item_wrapper">
-              <div class="catalog-item_info-wrapper">
+            <div class="catalog-item__wrapper">
+              <div class="catalog-item__info-wrapper">
                 <a
                   class="catalog-item__name-link"
                   href="#"
                   aria-label="Перейти на страницу с описанием товара"
                 >
                   <h3 class="catalog-item__name">
-                    Cat Energy&nbsp<br />
+                    Cat Energy&nbsp;<br />
                     Slim <span>1000 г</span>
                   </h3>
                 </a>
@@ -486,14 +491,14 @@
                     "
                   />
                   <img
-                    class="catalog-item__image catalog-item__image_slim1000buckwheat"
+                    class="catalog-item__image catalog-item__image--slim1000buckwheat"
                     src="img/catalog-item6-mobile@1x.png"
                     srcset="img/catalog-item6-mobile@2x.png 2x"
                     alt="Корм Cat Energy Slim с гречкой объемом 1000 граммов"
                   />
                 </picture>
               </a>
-              <div class="catalog-item__order-button_wrapper">
+              <div class="catalog-item__order-button-wrapper">
                 <a
                   class="button catalog-item__order-button"
                   aria-label="Добавить корм Cat Energy Slim с гречкой объемом 1000 граммов а корзину и перейти на страницу оформления заказа"
@@ -504,15 +509,15 @@
             </div>
           </li>
           <li class="catalog-item">
-            <div class="catalog-item_wrapper">
-              <div class="catalog-item_info-wrapper">
+            <div class="catalog-item__wrapper">
+              <div class="catalog-item__info-wrapper">
                 <a
                   class="catalog-item__name-link"
                   href="#"
                   aria-label="Перейти на страницу с описанием товара"
                 >
                   <h3 class="catalog-item__name">
-                    Cat Energy&nbsp<br />
+                    Cat Energy&nbsp;<br />
                     Slim <span>500 г</span>
                   </h3>
                 </a>
@@ -560,14 +565,14 @@
                     "
                   />
                   <img
-                    class="catalog-item__image catalog-item__image_slim500rice"
+                    class="catalog-item__image catalog-item__image--slim500rice"
                     src="img/catalog-item7-mobile@1x.png"
                     srcset="img/catalog-item7-mobile@2x.png 2x"
                     alt="Корм Cat Energy Slim с рисом объемом 500 граммов"
                   />
                 </picture>
               </a>
-              <div class="catalog-item__order-button_wrapper">
+              <div class="catalog-item__order-button-wrapper">
                 <a
                   class="button catalog-item__order-button"
                   aria-label="Добавить корм Cat Energy Slim с рисом объемом 500 граммов а корзину и перейти на страницу оформления заказа"
@@ -579,14 +584,14 @@
           </li>
           <li class="show-all-goods">
             <p class="show-all-goods__text">
-              Показать еще&nbsp<br />
+              Показать еще&nbsp;<br />
               100500 товаров
               <span class="show-all-goods__note">
                 На самом деле вкусов<br />
                 гораздо больше!
               </span>
             </p>
-            <div class="show-all-goods__button_wrapper">
+            <div class="show-all-goods__button-wrapper">
               <a
                 class="button show-all-goods__button"
                 href="#"
@@ -602,9 +607,9 @@
           <h2 class="catalog-additional-goods__title">Дополнительные товары</h2>
           <ul class="catalog-additional-goods-list">
             <li
-              class="catalog-additional-goods-item catalog-additional-goods-item-sweetener"
+              class="catalog-additional-goods-item catalog-additional-goods-item--sweetener"
             >
-              <div class="catalog-additional-goods-item_info-wrapper">
+              <div class="catalog-additional-goods-item__info-wrapper">
                 <a
                   class="catalog-additional-goods-item__title-link"
                   aria-label="Перейти на страницу с описанием товара"
@@ -622,9 +627,9 @@
                   </dd>
                 </dl>
               </div>
-              <div class="order-button_wrapper">
+              <div class="atalog-additional-goods-item__button-wrapper">
                 <a
-                  class="button order-button"
+                  class="button catalog-additional-goods-item__button"
                   aria-label="Добавить упаковку сахарозаменителя объемом 100 граммов в корзину и перейти на страницу оформления заказа"
                   href="#"
                   >Заказать</a
@@ -632,7 +637,7 @@
               </div>
             </li>
             <li class="catalog-additional-goods-item">
-              <div class="catalog-additional-goods-item_info-wrapper">
+              <div class="catalog-additional-goods-item__info-wrapper">
                 <a
                   class="catalog-additional-goods-item__title-link"
                   aria-label="Перейти на страницу с описанием товара"
@@ -652,9 +657,9 @@
                   </dd>
                 </dl>
               </div>
-              <div class="order-button_wrapper">
+              <div class="catalog-additional-goods-item__button-wrapper">
                 <a
-                  class="button order-button"
+                  class="button catalog-additional-goods-item__button"
                   aria-label="Добавить упаковку пятилитровую бутылку питьевой воды в корзину и перейти на страницу оформления заказа"
                   href="#"
                   >Заказать</a
@@ -662,7 +667,7 @@
               </div>
             </li>
             <li class="catalog-additional-goods-item">
-              <div class="catalog-additional-goods-item_info-wrapper">
+              <div class="catalog-additional-goods-item__info-wrapper">
                 <a
                   class="catalog-additional-goods-item__title-link"
                   aria-label="Перейти на страницу с описанием товара"
@@ -680,9 +685,9 @@
                   </dd>
                 </dl>
               </div>
-              <div class="order-button_wrapper">
+              <div class="catalog-additional-goods-item__button-wrapper">
                 <a
-                  class="button order-button"
+                  class="button catalog-additional-goods-item__button"
                   aria-label="Добавить литровый пакет молока в корзину и перейти на страницу оформления заказа"
                   href="#"
                   >Заказать</a
@@ -690,7 +695,7 @@
               </div>
             </li>
             <li class="catalog-additional-goods-item">
-              <div class="catalog-additional-goods-item_info-wrapper">
+              <div class="catalog-additional-goods-item__info-wrapper">
                 <a
                   class="catalog-additional-goods-item__title-link"
                   aria-label="Перейти на страницу с описанием товара"
@@ -708,9 +713,9 @@
                   </dd>
                 </dl>
               </div>
-              <div class="order-button_wrapper">
+              <div class="catalog-additional-goods-item__button-wrapper">
                 <a
-                  class="button order-button"
+                  class="button catalog-additional-goods-item__button"
                   aria-label="Добавить упаковку витаминов объемом 30 граммов в корзину и перейти на страницу оформления заказа"
                   href="#"
                   >Заказать</a
@@ -721,7 +726,7 @@
         </section>
         <section class="promo">
           <h2 class="visually-hidden">Промо-акция от Cat Energy</h2>
-          <div class="promo-text_wrapper">
+          <div class="promo-text__wrapper">
             <p class="promo-text">
               Закажите все<br />
               и получите чехол для<br />
@@ -734,7 +739,7 @@
     <footer class="page-footer">
       <section class="contacts">
         <h2 class="visually-hidden">Контакты</h2>
-        <div class="contacts__text container contacts__text_grey-theme">
+        <div class="contacts__text container contacts__text--grey-theme">
           <p class="contacts__invitation">
             Приглашаем<br />
             к сотрудничеству<br />
@@ -745,9 +750,41 @@
             Конюшенная, д. 19/8 <span>Санкт-Петербург</span>
           </address>
         </div>
-        <div id="map" class="map"></div>
+        <div id="map" class="map">
+          <picture>
+            <source
+              type="image/webp"
+              media="(min-width: 1440px)"
+              srcset="img/map-desktop@1x.webp, img/map-desktop@2x.webp 2x"
+            />
+            <source
+              type="image/webp"
+              media="(min-width: 768px)"
+              srcset="img/map-tablet@1x.webp, img/map-tablet@2x.webp 2x"
+            />
+            <source
+              type="image/webp"
+              srcset="map-mobile@1x.webp, img/map-mobile@2x.webp 2x"
+            />
+            <source
+              media="(min-width: 1440px)"
+              srcset="img/map-desktop@1x.png, img/map-desktop@2x.png 2x"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="img/map-tablet@1x.png, img/map-tablet@2x.png 2x"
+            />
+
+            <img
+              class="map__fallback"
+              src="img/map-mobile@1x.png"
+              srcset="img/map-mobile@2x.png 2x"
+              alt="Офис компании на карте"
+            />
+          </picture>
+        </div>
       </section>
-      <div class="page-footer-contacts-links_wrapper">
+      <div class="page-footer-contacts-links__wrapper">
         <section class="page-footer-contacts-links container">
           <a class="page-footer-contacts-links__logo" href="index.html">
             <svg
@@ -764,7 +801,7 @@
             <li class="socials-list__item">
               <a class="social-link" href="#" aria-label="ВКонтакте">
                 <svg
-                  class="social-link__icon social-link__icon-vk"
+                  class="social-link__icon social-link__icon--vk"
                   width="23"
                   height="16"
                   fill="#666666"
@@ -776,7 +813,7 @@
             <li class="socials-list__item">
               <a class="social-link" href="#" aria-label="Инстаграм">
                 <svg
-                  class="social-link__icon social-link__icon-instagram"
+                  class="social-link__icon social-link__icon--instagram"
                   width="16"
                   height="16"
                   fill="#666666"
@@ -788,7 +825,7 @@
             <li class="socials-list__item">
               <a class="social-link" href="#" aria-label="Фэйсбук">
                 <svg
-                  class="social-link__icon social-link__icon-facebook"
+                  class="social-link__icon social-link__icon--facebook"
                   width="13"
                   height="20"
                   fill="none"
@@ -805,11 +842,11 @@
               class="copyright__link"
               href="https://htmlacademy.ru/intensive/adaptive"
               aria-label="Перейти на страницу интенсива Профессиональный HTML и CSS, уровень 2 компании HTML Academy"
-              >HTML Academy
-            </a>
-            <a class="copyright__link-logo">
+            >
+              <p class="copyright__link-name">HTML Academy</p>
+
               <svg
-                class="copyright__logo"
+                class="copyright__link-logo"
                 width="27"
                 height="34"
                 fill="#666666"
