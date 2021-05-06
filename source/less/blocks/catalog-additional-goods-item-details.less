@@ -1,4 +1,19 @@
-.catalog-additional-goods-item-detail__title {
+.catalog-additional-goods-item-details {
+  display: flex;
+  justify-content: space-between;
+  white-space: nowrap;
+
+  @media (max-width: @mobile-width-only) {
+    margin-top: 14px;
+    margin-bottom: 14px;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-top: 3px;
+  }
+}
+
+.catalog-additional-goods-item-details__title {
   font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -18,7 +33,7 @@
   }
 }
 
-.catalog-additional-goods-item-detail__value {
+.catalog-additional-goods-item-details__value {
   font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -32,6 +47,6 @@
   }
 }
 
-.catalog-additional-goods-item-detail__title-water {
+.catalog-additional-goods-item-details__title-water {
   margin-right: 18px;
 }
