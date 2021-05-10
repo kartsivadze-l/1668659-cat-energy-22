@@ -7,26 +7,28 @@
     padding-left: 0;
   }
 
+  @media (min-width: 600px) {
+    row-gap: 45px;
+  }
+
   @media (min-width: @tablet-width) {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    column-gap: 33px;
+    column-gap: 4%;
     row-gap: 246px;
     margin-top: 183px;
     padding-left: 0;
   }
 
   @media (min-width: @desktop-width) {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 5px;
+    column-gap: 7%;
     margin-left: 0;
     margin-right: 0;
     padding: 0;
-    row-gap: 0;
     margin-top: 185px;
-    display: flex;
-    justify-content: space-between;
     padding-left: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 250px;
   }
 }
 
@@ -45,24 +47,6 @@
     padding-left: 0;
   }
 }
-
-/*.features-list__item:last-child br:first-child {
-  @media (min-width: @tablet-width) {
-    display: none;
-  }
-}
-
-.features-list__item:last-child br:nth-child(3) {
-  @media (min-width: @tablet-width) {
-    display: none;
-  }
-}
-
-.features-list__item:last-child br:nth-child(2) {
-  @media (max-width: @mobile-width-only) {
-    display: none;
-  }
-}*/
 
 .features-list__item--nutrition {
   @media (min-width: @tablet-width) {
@@ -141,7 +125,7 @@
 
   @media (min-width: @desktop-width) {
     top: -113px;
-    left: 7px;
+    left: 1px;
   }
 }
 
@@ -156,11 +140,6 @@
     z-index: -1;
     top: -150px;
     left: 112px;
-  }
-
-  @media (min-width: @desktop-width) {
-    top: -150px;
-    left: 120px;
   }
 }
 
@@ -192,7 +171,7 @@
 
   @media (min-width: @desktop-width) {
     top: -113px;
-    left: -5px;
+    left: -1px;
   }
 }
 
@@ -207,11 +186,6 @@
     z-index: -1;
     top: -150px;
     left: 112px;
-  }
-
-  @media (min-width: @desktop-width) {
-    top: -150px;
-    left: 110px;
   }
 }
 

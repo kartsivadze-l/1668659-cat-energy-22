@@ -1,68 +1,55 @@
-.slider__btn {
-  text-transform: uppercase;
-  font-family: "Oswald", "Arial", sans-serif;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 20px;
-}
-
 .slider {
   @media (min-width: @tablet-width) {
     margin-top: 83px;
     background-image: linear-gradient(transparent 27%, #eaeaea 27%);
     padding-bottom: 70px;
     margin-bottom: -71px;
+    padding-left: 47px;
   }
 
   @media (min-width: @desktop-width) {
-    background-image: linear-gradient(transparent 30%, #f2f2f2 30%);
+    background-image: none;
     margin: 0;
     position: absolute;
     left: 47.2%;
-    top: -60px;
+    top: -58px;
+    padding-left: 0;
     padding-bottom: 70px;
     width: 52.8%;
   }
 }
 
 .slider__images {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-
   @media (max-width: @mobile-width-only) {
     margin-top: 43px;
     margin-left: -20px;
     margin-bottom: 26px;
   }
 
+  @media (min-width: @tablet-width) {
+    position: relative;
+  }
+
   @media (min-width: @desktop-width) {
     margin-left: 0;
-    justify-content: left;
   }
 }
 
 .slider__image-before {
-  @media (min-width: @tablet-width) {
-    margin-left: 44px;
-  }
-
   @media (min-width: @desktop-width) {
-    margin-left: 0;
     margin-top: 0;
   }
 }
 
 .slider__image-after {
-  display: none;
-
-  @media (min-width: @tablet-width) {
-    margin-left: 138px;
-  }
+  padding-left: 90px;
+  position: relative;
 
   @media (min-width: @desktop-width) {
-    margin-top: 0;
-    margin-left: 91px;
+    padding-left: 0;
+    margin-left: 90px;
+    z-index: 1;
+    position: relative;
   }
 }
 
@@ -71,15 +58,16 @@
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   width: min-content;
-  margin: 0 auto;
+  margin-left: 38px;
   margin-top: 0;
 
   @media (min-width: @tablet-width) {
     margin-top: 10px;
+    margin-left: 51px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 35px;
+    margin-top: -117px;
     margin-left: 80px;
   }
 }
@@ -92,6 +80,9 @@
   font-size: 16px;
   line-height: 20px;
   cursor: pointer;
+  box-sizing: border-box;
+  border-bottom: 1px solid transparent;
+  z-index: 2;
 
   &:focus-within {
     outline: none;
@@ -101,16 +92,12 @@
     font-size: 20px;
     line-height: 30px;
     padding: 0;
-
-    &:active {
-      border-bottom: 1px solid #d9d9d9;
-    }
   }
 }
 
 .slider__button--active {
   @media (min-width: @tablet-width) {
-    border-bottom: 1px dotted #d9d9d9;
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.25);
   }
 }
 
@@ -127,7 +114,7 @@
     content: "";
     left: 5px;
     top: 3px;
-    width: 5px;
+    width: 36px;
     height: 6px;
     border-radius: 6px;
     background-color: #68b738;
@@ -155,8 +142,8 @@
 .slider__toggle {
   @media (min-width: @tablet-width) {
     position: absolute;
-    top: -16px;
-    left: 0;
+    top: -15px;
+    left: 197px;
     width: 34px;
     height: 34px;
     box-sizing: border-box;
@@ -167,6 +154,10 @@
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16);
 
     &:hover {
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.19);
+    }
+
+    &:focus-within {
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.19);
     }
 
@@ -185,5 +176,52 @@
       background-color: #68b738;
       border-radius: 50%;
     }
+  }
+}
+
+.slider__button:hover {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.slider__button:active {
+  border-bottom: 1px solid transparent;
+}
+
+.slider__image-before-wrapper {
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    clip-path: inset(0 340px 0 0);
+  }
+
+  @media (min-width: @desktop-width) {
+    clip-path: inset(0 300px 0 0);
+  }
+}
+
+.slider__image-after-wrapper {
+  @media (max-width: @mobile-width-only) {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    clip-path: inset(0 0 0 337px);
+  }
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+    padding-bottom: 150px;
+    clip-path: inset(0 0 0 365px);
+  }
+}
+
+.slider__image-after-wrapper::after {
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    content: "";
+    background-image: linear-gradient(transparent 29.05%, #eaeaea 29.05%);
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
   }
 }

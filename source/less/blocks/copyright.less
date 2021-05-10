@@ -3,7 +3,7 @@
 
   @media (max-width: @mobile-width-only) {
     justify-content: space-between;
-    padding-top: 14px;
+    padding-top: 12px;
     border-top: 1px solid #d9d9d9;
   }
 
@@ -32,21 +32,17 @@
   }
 
   &:active {
+    fill: #68b638;
     opacity: 0.3;
   }
 }
 
-/*.copyright__logo {
-  @media (min-width: @desktop-width) {
-    margin-top: 1px;
-  }
+.copyright__link:hover .copyright__link-logo {
+  fill: #68b638;
 }
 
-.copyright__logo:hover {
-  fill: #68b738;
-}*/
-
-.copyright__link-logo:active {
+.copyright__link:active .copyright__link-logo {
+  fill: #68b638;
   opacity: 0.3;
 }
 

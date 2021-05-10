@@ -2,6 +2,7 @@ var navMain = document.querySelector('.main-nav');
   var navToggle = document.querySelector('.main-nav__toggle');
 
   navMain.classList.remove('main-nav--nojs');
+  navMain.classList.add('main-nav--closed');
 
   navToggle.addEventListener('click', function() {
     if (navMain.classList.contains('main-nav--closed')) {
@@ -26,6 +27,6 @@ var myMap = new google.maps.Map(document.getElementById('map'), opt);
 var marker = new google.maps.Marker({
 position: pos,
 map: myMap,
-icon: "../img/map-pin.svg"
+icon: '../img/map-pin.svg'
 });
 }
