@@ -112,7 +112,6 @@
   line-height: 26px;
   background-color: #ffffff;
   position: relative;
-  margin-left: 20px;
   padding-right: 23px;
 
   @media (min-width: @tablet-width) {
@@ -129,7 +128,6 @@
 }
 
 .form-field__title--owner-contacts {
-  margin-left: 0;
   padding-right: 15px;
 
   @media (min-width: @tablet-width) {
@@ -250,14 +248,12 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    padding-left: 20px;
-    padding-right: 20px;
   }
 }
 
@@ -267,7 +263,8 @@
 
 .form-field__input:focus-within {
   outline: none;
-  border: 2px solid #444444;
+  border: 1px solid #444444;
+  box-shadow: 0 0 0 1px #444444;
 }
 
 .form-field__input--owner-contacts {
@@ -278,12 +275,13 @@
 
 .form-field__input--cat,
 .form-field__input--owner-contacts:invalid:not(:placeholder-shown) {
-  border: 2px solid #ff8282;
+  border: 1px solid #ff8282;
+  box-shadow: 0 0 0 1px  #ff8282;
 }
 
 .form-field__input--email,
 .form-field__input--phone {
-  padding-right: 45px;
+  padding-right: 38px;
 }
 
 .form-field__input--comment {
@@ -294,17 +292,11 @@
   width: 100%;
   height: 150px;
 
-  @media (max-width: @mobile-width-only) {
-    padding-left: 14px;
-    padding-right: 5px;
-  }
-
   @media (min-width: @tablet-width) {
     height: 174px;
     margin-left: 50px;
     margin-top: 75px;
     padding-top: 8px;
-    padding-left: 18px;
   }
 
   @media (min-width: @desktop-width) {
@@ -327,6 +319,27 @@
     font-size: 20px;
     line-height: 30px;
   }
+}
+
+.form-field__input::-moz-placeholder {
+  text-transform: uppercase;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+  opacity: 1;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.form-field__input::-ms-input-placeholder {
+  color: #444444;
+  opacity: 1;
 }
 
 .form-field__questionnaire-wrapper {
@@ -388,10 +401,6 @@ input::-webkit-inner-spin-button {
   @media (min-width: @tablet-width) {
     height: 52px;
   }
-
-  @media (min-width: @desktop-width) {
-    padding-left: 17px;
-  }
 }
 
 .form-field__input--name {
@@ -410,7 +419,9 @@ input::-webkit-inner-spin-button {
   margin-bottom: 26px;
 
   @media (max-width: @mobile-width-only) {
-    padding-top: 26px;
+    margin-top: 9px;
+    padding-top: 16px;
+    border-top: 1px solid #d9d9d9;
   }
 
   @media (min-width: @tablet-width) {
@@ -476,16 +487,17 @@ input::-webkit-inner-spin-button {
   }
 }
 
+.form-field__input--program:focus-within + .form-field__label--program::before {
+  border: 1px solid #bababa;
+  border-radius: 20px;
+}
+
 .form-field__label--program:focus-within::before {
   border: 1px solid #bababa;
 }
 
 .form-field__input--program:nth-child(2) {
   padding-bottom: 13px;
-}
-
-.form-field__input--program:hover + .form-field__label--program::before {
-  border-color: #bababa;
 }
 
 .form-field__input--program:disabled + .form-field__label--program {
@@ -529,7 +541,6 @@ input::-webkit-inner-spin-button {
   @media (min-width: @desktop-width) {
     height: 52px;
     margin-left: 17px;
-    padding-left: 17px;
   }
 }
 

@@ -252,11 +252,15 @@
   }
 }
 
+.programs-list__link:focus-within {
+  outline: none;
+}
+
 .programs-list__link--icon-slim:active::after {
   opacity: 0.3;
 }
 
-.programs-list__link--icon-slim:hover::after {
+.programs-list__link--icon-slim:focus-within::after {
   position: absolute;
   content: "";
   width: 32px;
@@ -303,7 +307,7 @@
   opacity: 0.3;
 }
 
-.programs-list__link--icon-pro:hover::after {
+.programs-list__link--icon-pro:focus-within::after {
   position: absolute;
   content: "";
   width: 32px;

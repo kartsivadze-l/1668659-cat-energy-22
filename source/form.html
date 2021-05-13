@@ -7,7 +7,7 @@
     <link rel="icon" href="favicon.ico" />
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="img/favicons/180.png" />
-    <link rel="manifest" href="favicons.webmanifest" />
+    <link rel="manifest" href="img/favicons.webmanifest" />
     <link rel="stylesheet" href="css/style.min.css" />
     <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin />
     <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin/>
@@ -59,15 +59,15 @@
               </legend>
               <div class="form-field__questionnaire-wrapper">
                 <label class="form-field__label" for="cat-name">Имя:*</label>
-                <input class="form-field__input form-field__input--cat form-field__input--name" type="text" name="cat-name" id="cat-name" placeholder="Барсик" required/>
+                <input class="form-field__input form-field__input--cat form-field__input--name" type="text" name="cat-name" id="cat-name" placeholder="    Барсик" required/>
               </div>
               <div class="form-field__questionnaire-wrapper">
                 <label class="form-field__label form-field__input--cat" for="cat-weight">Вес (кг):*</label>
-                <input class="form-field__input form-field__input--weight" type="number" name="cat-weight" id="cat-weight" placeholder="7" required/>
+                <input class="form-field__input form-field__input--weight" type="number" name="cat-weight" id="cat-weight" placeholder="    7" required/>
               </div>
               <div class="form-field__questionnaire-wrapper">
                 <label class="form-field__label" for="cat-age">Возраст (лет):</label>
-                <input class="form-field__input form-field__input--age" type="number" name="cat-age" id="cat-age" placeholder="7"/>
+                <input class="form-field__input form-field__input--age" type="number" name="cat-age" id="cat-age" placeholder="    7"/>
               </div>
             </fieldset>
             <fieldset class="form-field form-field--program">
@@ -75,11 +75,11 @@
                 Выберите программу или положитесь на наш совет:
               </legend>
               <div class="container">
-                <input class="form-field__input form-field__input--program visually-hidden" type="radio" name="program" id="slim" checked="checked"/>
+                <input class="form-field__input form-field__input--program visually-hidden" type="radio" name="program" id="slim" checked="checked" tabindex="0"/>
                 <label class="form-field__label form-field__label--program" for="slim">Похудение</label>
-                <input class="form-field__input form-field__input--program visually-hidden" type="radio" name="program" id="pro"/>
+                <input class="form-field__input form-field__input--program visually-hidden" type="radio" name="program" id="pro" tabindex="0"/>
                 <label class="form-field__label form-field__label--program" for="pro">Набор массы</label>
-                <input class="form-field__input form-field__input--program visually-hidden" type="radio" name="program" id="unsure"/>
+                <input class="form-field__input form-field__input--program visually-hidden" type="radio" name="program" id="unsure" tabindex="0"/>
                 <label class="form-field__label form-field__label--program" for="unsure">Не знаю (Нужен ваш совет)</label>
               </div>
             </fieldset>
@@ -92,14 +92,14 @@
             <div class="form-field__owner-contacts-wrapper">
               <div class="form-field__email">
               <label class="form-field__label form-field__label--email" for="user-email">E-mail:*</label>
-                <input class="form-field__input form-field__input--owner-contacts form-field__input--email" type="email" name="user-email" id="user-email" placeholder="kuklachev@gmail.com" required />
+                <input class="form-field__input form-field__input--owner-contacts form-field__input--email" type="email" name="user-email" id="user-email" placeholder="    kuklachev@gmail.com" required />
                 <svg class="form-field__icon form-field__icon--email" width="20" height="15" fill="none" stroke="#222222">
                   <use xlink:href="img/sprite.svg#email-icon"></use>
                 </svg>
               </div>
               <div class="form-field__phone">
               <label class="form-field__label form-field__label--phone" for="user-phone">Телефон:*</label>
-                <input class="form-field__input form-field__input--owner-contacts form-field__input--phone" type="tel" name="user-phone" id="user-phone" placeholder="8 (960) 900-60-90" pattern="8 ([0-9]{3}) [0-9]{3}-[0-9]{2}-[0-9]{2}" required />
+                <input class="form-field__input form-field__input--owner-contacts form-field__input--phone" type="tel" name="user-phone" id="user-phone" placeholder="    8 (960) 900-60-90" pattern="8 ([0-9]{3}) [0-9]{3}-[0-9]{2}-[0-9]{2}" required />
                 <svg class="form-field__icon form-field__icon--phone" width="20" height="20" fill="black">
                   <use xlink:href="img/sprite.svg#phone-icon"></use>
                 </svg>
@@ -108,7 +108,7 @@
           </fieldset>
           <div class="form-field form-field--comment container">
             <label class="form-field__title form-field__title--comment" for="user-comment">Комментарий</label>
-            <textarea class="form-field__input form-field__input--comment" name="user-comment" id="user-comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <textarea class="form-field__input form-field__input--comment" name="user-comment" id="user-comment" placeholder="    Расскажите обо всех повадках кота"></textarea>
           </div>
           <fieldset class="form-field form-field--additional container">
             <legend class="form-field-additional__title">Дополнительно</legend>
@@ -154,7 +154,7 @@
           <picture>
             <source type="image/webp" media="(min-width: 1440px)" srcset="img/map-desktop@1x.webp, img/map-desktop@2x.webp 2x"/>
             <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet@1x.webp, img/map-tablet@2x.webp 2x"/>
-            <source type="image/webp" srcset="map-mobile@1x.webp, img/map-mobile@2x.webp 2x"/>
+            <source type="image/webp" srcset="img/map-mobile@1x.webp, img/map-mobile@2x.webp 2x"/>
             <source media="(min-width: 1440px)" srcset="img/map-desktop@1x.png, img/map-desktop@2x.png 2x"/>
             <source media="(min-width: 768px)" srcset="img/map-tablet@1x.png, img/map-tablet@2x.png 2x"/>
             <img class="map__fallback" src="img/map-mobile@1x.png" srcset="img/map-mobile@2x.png 2x" alt="Офис компании на карте" />
